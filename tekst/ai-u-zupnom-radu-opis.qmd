@@ -1,0 +1,216 @@
+---
+title: "AI kao pomoćnik u župnom radu"
+subtitle: "Radionica za župne suradnike Zagrebačke nadbiskupije"
+author: ""
+date: 2026-02-26
+lang: hr
+abstract: |
+  Alati umjetne inteligencije postali su sveprisutni u profesionalnom i osobnom životu, no njihova primjena u kontekstu crkvenog djelovanja ostaje pretežno neistražena. Ovaj rad opisuje koncept, sadržaj i metodologiju praktične radionice namijenjene župnim suradnicima Zagrebačke nadbiskupije, osmišljene s ciljem demistifikacije AI tehnologije i osposobljavanja sudionika za njezinu odgovornu uporabu u svakodnevnim župnim zadacima. Radionica u trajanju od 90 minuta kombinira teorijski uvod o mogućnostima i ograničenjima velikih jezičnih modela s praktičnim radom u AI alatu Claude, pri čemu sudionici izrađuju tekstove izravno primjenjive u svojem radu: objave za društvene mreže, službenu korespondenciju, materijale za katehezu i slično. Posebna pozornost posvećena je etičkoj dimenziji uporabe AI-ja u crkvenom kontekstu, uključujući pitanja privatnosti podataka, teološke točnosti i nezamjenjivosti osobnog pastoralnog susreta. Rad također predstavlja okvir za pisanje učinkovitih uputa (promptova) prilagođen korisnicima bez tehničkog predznanja te razmatra mogućnosti i ograničenja generiranja slika pomoću AI alata.
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    toc-title: "Sadržaj"
+    number-sections: true
+    smooth-scroll: true
+    lang: hr
+  pdf:
+    documentclass: article
+    papersize: a4
+    fontsize: 11pt
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=3cm
+      - right=3cm
+    number-sections: true
+    toc: true
+    toc-depth: 3
+    toc-title: "Sadržaj"
+    lang: hr
+    include-in-header:
+      text: |
+        \usepackage[croatian]{babel}
+---
+
+# Uvod
+
+Posljednjih nekoliko godina svjedočimo ubrzanom prodoru alata temeljenih na umjetnoj inteligenciji u gotovo sve segmente profesionalnog i osobnog djelovanja. Veliki jezični modeli poput sustava Claude tvrtke Anthropic ili ChatGPT tvrtke OpenAI prešli su iz domene tehnoloških eksperimenata u svakodnevne alate kojima se koriste milijuni korisnika za pisanje, istraživanje, planiranje i komunikaciju. Ovaj prijelaz nije zaobišao ni crkvene zajednice, premda se u tom kontekstu o njemu govori znatno rjeđe nego u poslovnom ili obrazovnom okruženju.
+
+Župni suradnici, bilo da je riječ o tajnicima, kateheticama i katehetama, animatorima, voditeljima pastoralnih vijeća ili volonterima uključenima u komunikaciju župe, svakodnevno obavljaju niz zadataka koji uključuju rad s tekstom. Pišu objave za društvene mreže, sastavljaju službene dopise, pripremaju materijale za katehezu, oblikuju župne biltene, organiziraju događanja i komuniciraju s vjernicima. Mnogi od tih zadataka oduzimaju vrijeme koje bi moglo biti usmjereno na ono što čini srž pastoralnoga rada, a to je osobni susret i izgradnja zajednice.
+
+Upravo ta napetost između administrativnih obveza i pastoralne prisutnosti čini AI alate potencijalno vrijednim pomoćnicima u župnom kontekstu. No prije nego što se takvi alati mogu korisno primijeniti, potrebno je premostiti dva bitna izazova. Prvi je nedostatak temeljnog razumijevanja što AI zapravo jest, kako funkcionira i gdje su granice njegove korisnosti. Drugi je izostanak praktičnog iskustva, jer većina župnih suradnika nikada nije koristila AI alat niti razumije kako mu zadati jasan zadatak.
+
+Radionica opisana u ovom radu osmišljena je kao odgovor na oba izazova. Njezin cilj nije stvoriti tehničke stručnjake, nego osposobiti župne suradnike da AI alate koriste onako kako koriste bilo koji drugi alat u svojem radu: svjesno, odgovorno i u službi poslanja koje obavljaju.
+
+## Stav Katoličke crkve prema umjetnoj inteligenciji
+
+Katolička crkva prati razvoj tehnologije s pozornošću koja proizlazi iz njezine temeljne brige za ljudsko dostojanstvo i opće dobro. Papa Franjo posvetio je svoju poruku za Svjetski dan mira 2024. upravo temi umjetne inteligencije, pod naslovom *"Umjetna inteligencija i mir."* U toj poruci naglašava da tehnologija sama po sebi nije ni dobra ni loša, da njezina etička vrijednost ovisi o načinu na koji je ljudi koriste te da svaki tehnološki razvoj mora služiti autentičnom ljudskom napretku, a ne isključivo ekonomskoj učinkovitosti.
+
+Taj okvir pruža čvrsto polazište za pristup koji ova radionica zauzima. AI se ne predstavlja ni kao prijetnja koju valja izbjegavati ni kao čarobno rješenje koje će transformirati župni rad. Umjesto toga, tretira se kao alat čija korisnost ovisi o mudrom i informiranom korisniku, a čija se primjena mora neprestano promišljati u svjetlu vrednota koje crkvena zajednica njeguje.
+
+
+# Teorijski okvir
+
+## Što su veliki jezični modeli
+
+Kada korisnik otvori alat poput Claudea i postavi mu pitanje, na ekranu se pojavljuje tekst koji nalikuje odgovoru upućene osobe. Ta iluzija razumijevanja zaslužuje objašnjenje jer bez njega korisnici skloni su pripisivati alatu sposobnosti koje ne posjeduje ili, suprotno, odbaciti ga kao nepouzdanog bez razumijevanja zašto je nepouzdan.
+
+Veliki jezični modeli nastaju procesom koji se naziva treniranjem na ogromnim količinama teksta: knjigama, člancima, web stranicama, razgovorima i dokumentima na stotinama jezika. Iz tog materijala model uči obrasce u jeziku: kako se rečenice oblikuju, kako odgovori slijede pitanja, kako različiti stilovi i registri funkcioniraju. Kada mu korisnik zada upit, model ne pretražuje bazu podataka niti razmišlja u ljudskom smislu. On, pojednostavljeno rečeno, predviđa koji bi niz riječi bio najkorisniji nastavak razgovora na temelju svega što je naučio tijekom treniranja.
+
+Analogija koja se pokazala korisnom u radu s ovom ciljnom skupinom jest sljedeća: AI nalikuje osobi koja je pročitala svaku knjigu u knjižnici, ali nikada nije izašla iz kuće. Raspolaže ogromnim znanjem o jeziku i oblicima izražavanja, no nema životnog iskustva, osobnih uvjerenja ni sposobnosti za moralni sud. Može napisati propovijed koja zvuči uvjerljivo, ali ne može osjetiti što određena zajednica u određenom trenutku treba čuti.
+
+Ova razlika nije samo teorijska. Ona ima izravne praktične posljedice za način na koji se AI alatima valja koristiti u župnom kontekstu, što je tema koja se provlači kroz cijelu radionicu.
+
+## Mogućnosti AI alata u kontekstu župnog rada
+
+Područja u kojima veliki jezični modeli dosljedno pokazuju visoku razinu korisnosti poklapaju se u značajnoj mjeri sa svakodnevnim zadacima župnih suradnika. Među njima se ističe nekoliko ključnih primjena.
+
+Pisanje i preoblikovanje tekstova predstavlja vjerojatno najčešći način korištenja. Suradnik može zamoliti AI da napiše prvu verziju objave za Facebook stranicu župe, da preoblikuje formalan tekst u pristupačniji oblik ili da prilagodi postojeći sadržaj drugoj ciljnoj publici. Primjerice, isti tekst o nadolazećem događanju može se u jednom koraku prilagoditi za službeni bilten, a u drugom za Instagram objavu usmjerenu mlađim vjernicima. Ovaj postupak ne zamjenjuje ljudski sud o tome što valja komunicirati, ali znatno ubrzava samu izvedbu.
+
+Sažimanje dugih dokumenata još je jedna snaga jezičnih modela. Pastoralna pisma, dokumenti Biskupske konferencije ili papinske enciklike često su opsežni tekstovi čije ključne poruke valja prenijeti široj zajednici. AI može takav dokument sažeti na jednu stranicu ili izdvojiti najvažnije teze u obliku prikladnom za čitanje na sastanku župnog pastoralnog vijeća.
+
+Brainstorming i generiranje ideja osobito je koristan u trenucima kreativnog zastoja. Kada voditelj mladih traži ideje za korizmeni program ili kada tajnik župe treba smisliti temu za mjesečno druženje obitelji, AI može u nekoliko sekundi ponuditi desetak prijedloga koji služe kao polazište za daljnje promišljanje. Nijedan od tih prijedloga ne mora biti konačan, ali sam čin njihova čitanja često pokreće vlastito razmišljanje korisnika.
+
+Prilagodba tona i registra posebno je vrijedna u crkvenom kontekstu, gdje isti sadržaj često treba komunicirati različitim skupinama. Tekst pisan za odrasle vjernike potrebno je ponekad preoblikovati za djecu u katehezi. Neslužbeni zapis sa sastanka treba pretočiti u formalan zapisnik. AI takve prilagodbe izvodi brzo i konzistentno.
+
+Prijevod i jezična pomoć relevantni su u župama s višejezičnom zajednicom ili u komunikaciji s inozemnim partnerima. AI može prevesti obavijest na engleski, njemački ili drugi jezik, pri čemu kvaliteta prijevoda za jednostavnije tekstove doseže razinu koja je sasvim funkcionalna za internu komunikaciju.
+
+## Ograničenja i rizici
+
+Razumijevanje ograničenja AI-ja jednako je važno kao i poznavanje njegovih mogućnosti, a u kontekstu crkvenog rada čak i važnije, jer pogreške mogu imati posljedice za teološku ispravnost sadržaja ili privatnost pojedinaca.
+
+Najistaknutije ograničenje jest sklonost halucinacijama, odnosno generiranju sadržaja koji zvuči uvjerljivo, ali je činjenično netočan. Jezični model može citirati encikliku koja ne postoji, pripisati izjavu krivom svetom ocu ili navesti pogrešan datum liturgijskog blagdana. To čini jer ne posjeduje mehanizam za razlikovanje istinitog od vjerojatnog; on generira tekst koji statistički odgovara kontekstu, bez obzira na istinitost. Posljedica je jasna: svaki tekst koji AI proizvede mora proći ljudsku provjeru prije objave ili uporabe.
+
+Teološka nepreciznost predstavlja specifičan oblik ovog problema. AI je tijekom treniranja apsorbirao tekstove iz različitih kršćanskih tradicija, ali i drugih religija i svjetonazora. Ne razlikuje katoličku doktrinu od protestantske teologije. Može upotrijebiti termine koji zvuče ispravno, ali nose drukčije značenje u katoličkom kontekstu, ili pak iznijeti teološko mišljenje kao utvrđenu nauku. U praksi to znači da svaki sadržaj koji se tiče vjere, sakramenata, moralne teologije ili Svetog pisma zahtijeva posebnu pozornost onoga tko ga pregledava.
+
+Nedostatak pastoralnog suda možda je najdublji razlog zašto AI ne može zamijeniti ljudski rad u župi. AI ne poznaje ljude. Ne zna da je Marija upravo izgubila supruga i da će standardna formulacija u pismu zvučati hladno. Ne osjeća napetost na sastanku vijeća. Ne može procijeniti treba li u određenoj situaciji biti izravan ili blag. Taj sud, koji proizlazi iz iskustva, empatije i poznavanja zajednice, ostaje isključivo ljudska domena.
+
+Na besplatnoj razini korištenja, AI alati poput Claudea nemaju pristup internetu u stvarnom vremenu. To znači da ne znaju što se dogodilo jučer, ne poznaju aktualni raspored misa u župi i ne mogu provjeriti je li informacija koju su generirali i dalje točna. Korisnici to moraju imati na umu, osobito kada od AI-ja traže informacije koje se mogu promijeniti.
+
+## Etička dimenzija
+
+Četiri etička načela čine okvir unutar kojega radionica pozicionira uporabu AI-ja u crkvenom kontekstu.
+
+Privatnost podataka najkonkretnija je etička obveza. U AI alate nikada se ne smiju unositi osobni podaci župljana: imena, adrese, telefonski brojevi, zdravstveno stanje, obiteljske situacije ni bilo kakvi podaci koji bi mogli identificirati pojedinca. Ako suradnik želi pomoć pri sastavljanju pisma za osobu u teškoj situaciji, mora potpuno anonimizirati sadržaj. Primjerice, umjesto "Napiši pismo utjehe za Mariju Horvat iz Dubrave čiji je muž preminuo prošli tjedan" ispravno je napisati "Napiši pismo utjehe za osobu koja je nedavno izgubila supružnika."
+
+Transparentnost u korištenju AI-ja ne zahtijeva da svaki tekst nosi oznaku "generirano umjetnom inteligencijom," ali pretpostavlja iskrenost kada netko postavi pitanje. Reći "koristio sam AI kao pomoć pri pisanju" jednako je legitimno kao reći "zamolio sam kolegu da pogleda tekst." AI je alat, a korištenje alata ne umanjuje vrijednost rada.
+
+Nezamjenjivost osobnog susreta najvažnije je etičko načelo u pastoralnom kontekstu. AI može pomoći da email bude bolje napisan, ali taj email mora voditi prema stvarnom susretu, stvarnoj zajednici, stvarnoj prisutnosti. Učinkovitost u komunikaciji nije sama sebi svrha; njezin smisao leži u tome da oslobodi vrijeme za ono što je uistinu bitno.
+
+Konačno, odgovornost za sadržaj uvijek leži na osobi, nikada na alatu. Tko objavljuje tekst na stranici župe, tko šalje pismo biskupijskom uredu, tko dijeli materijal za katehezu, taj odgovara za točnost, prikladnost i teološku ispravnost toga sadržaja, bez obzira na to je li ga pisao sam, s pomoću AI-ja ili u suradnji s drugom osobom.
+
+
+# Metodologija radionice
+
+## Format i trajanje
+
+Radionica je osmišljena kao jednokratna edukacija u trajanju od 90 minuta, podijeljena u pet blokova koji se izmjenjuju između predavanja, demonstracije uživo i praktičnog rada sudionika. Ovakva struktura odabrana je iz dvaju razloga. Dulji čisto predavački format ne bi odgovarao temi koja je inherentno praktična, dok bi čisto praktičan pristup bez teorijskog utemeljenja ostavio sudionike bez razumijevanja onoga što rade i zašto.
+
+Omjer je otprilike 40 minuta teorije i demonstracija te 45 minuta praktičnog rada sudionika, s preostalih 10 minuta za zaključnu diskusiju. Teorijski dijelovi uključuju česte live demonstracije u AI alatu kako bi apstraktni pojmovi odmah dobili konkretan oblik.
+
+## Ciljana skupina i preduvjeti
+
+Radionica je namijenjena župnim suradnicima bez prethodnog iskustva s AI alatima. Pretpostavlja se osnovna informatička pismenost (korištenje web preglednika, tipkanje na tipkovnici ili zaslonu mobilnog uređaja), ali ne i bilo kakvo tehničko predznanje o umjetnoj inteligenciji, programiranju ili digitalnim alatima.
+
+Optimalna veličina grupe je 8 do 15 sudionika. S manjim grupama moguće je pružiti individualnu pažnju tijekom praktičnog rada, dok veće grupe zahtijevaju prilagodbu (rad u parovima ili trojkama, duže vrijeme za vježbe, manje individualnog praćenja).
+
+Prije radionice sudionicima se šalje kratki email s molbom da kreiraju besplatni račun na claude.ai i da, ako je moguće, ponesu prijenosno računalo ili mobilni uređaj. Ovaj korak eliminira najčešći izvor gubitka vremena tijekom samog događanja: tehničke poteškoće pri registraciji.
+
+## Odabir alata
+
+Kao primarni alat za tekstualni rad odabran je Claude tvrtke Anthropic u besplatnoj verziji. Ovaj izbor temelji se na nekoliko čimbenika: Claude proizvodi tekst visoke kvalitete na hrvatskom jeziku, sučelje je jednostavno i intuitivno, besplatna verzija ne zahtijeva plaćanje ni kreditnu karticu, a sam alat dizajniran je s naglaskom na sigurnost i odgovornu uporabu.
+
+Za demonstraciju generiranja slika koristi se Microsoft Copilot, koji je besplatno dostupan putem web preglednika i uključuje mogućnost stvaranja slika iz tekstualnih opisa. Ovaj alat odabran je jer ne zahtijeva poseban račun za osnovno korištenje i jer je dostupan na hrvatskom tržištu bez ograničenja.
+
+## Pristup sudionicima bez uređaja
+
+Budući da se ne može sa sigurnošću pretpostaviti da će svi sudionici imati pristup uređaju, radionica uključuje plan za rad u parovima. Na početku praktičnog bloka voditelj pita tko ima uređaj, a tko nema, te organizira parove. Ovaj pristup ne tretira se kao nužno rješenje, nego kao ravnopravna metoda rada, jer suradnički rad u parovima često proizvodi bolje rezultate: osoba koja promatra i komentira često uočava stvari koje osoba koja tipka previđa.
+
+
+# Sadržaj radionice
+
+## Blok 1: Uvod i demistifikacija (20 minuta)
+
+Radionica ne počinje definicijama ni teoretskim objašnjenjima. Umjesto toga, voditelj odmah otvara Claude na projektoru i izvodi živu demonstraciju pred sudionicima. Koristi se realan ili realistično konstruiran primjer iz župne prakse: postojeći tekst iz župnog biltena ubacuje se u Claude s upitom da ga preoblikuje za mlađu publiku ili da na temelju njega napiše objavu za Instagram.
+
+Ovaj pristup obrće uobičajeni redoslijed poučavanja. Umjesto da se najprije objasni što je AI pa se zatim pokaže kako radi, sudionici najprije vide rezultat, a tek zatim čuju objašnjenje. Učinak je značajno snažniji jer sudionici u prvim minutama dobivaju odgovor na jedino pitanje koje ih zaista zanima: može li mi ovo pomoći u poslu? Kada taj odgovor vidimo na ekranu, motivacija za slušanje teorijskog dijela znatno raste.
+
+Nakon demonstracije slijedi kratak teorijski okvir prilagođen publici koja nije tehnička. Objašnjenje velikih jezičnih modela svodi se na tri ključne ideje: model je naučio obrasce iz ogromne količine teksta, na temelju tih obrazaca predviđa najkorisniji odgovor, te nema svijest, uvjerenja ni pristup stvarnom svijetu. Analogija s osobom koja je pročitala svaku knjigu ali nikada nije izašla iz kuće pomaže sudionicima da intuitivno razumiju i snage i slabosti alata.
+
+Blok se zatvara pregledom mogućnosti, ograničenja i etičke dimenzije, pri čemu se svaka točka ilustrira primjerom iz župnog rada. Ograničenja se ne iznose kao razlog za izbjegavanje AI-ja, nego kao preduvjet za njegovu mudru uporabu; naglasak je na tome da je korisnik uvijek odgovoran za pregled i provjeru generiranog sadržaja.
+
+## Blok 2: Pisanje dobrih promptova (15 minuta)
+
+Ovaj blok prenosi jednu jedinu, ali ključnu vještinu: kako AI alatu zadati uputu koja će proizvesti koristan rezultat. Iskustvo pokazuje da većina početnika napiše jednu kratku, neodređenu rečenicu, dobije generičan odgovor i zaključi da AI nije koristan. Problem gotovo nikada nije u alatu, nego u uputi.
+
+Radionica uvodi UZKO okvir: akronim koji označava četiri elementa učinkovitog prompta. Slovo U stoji za Ulogu (tko je AI u ovom razgovoru), Z za Zadatak (što točno trebam), K za Kontekst (koji su relevantni detalji), a O za Oblik (ton, duljina, stil, format). Okvir je namjerno jednostavan jer služi korisnicima bez tehničkog predznanja, a dovoljno je konkretan da odmah proizvodi bolje rezultate.
+
+Središnji trenutak ovog bloka jest usporedba lošeg i dobrog prompta za isti zadatak, izvedena uživo u Claudeu. Voditelj najprije upisuje "Napiši nešto o misi," pokazuje generičan rezultat, a zatim upisuje potpuno formuliran prompt koji koristi sva četiri UZKO elementa za istu temu, primjerice Facebook objavu o svečanoj misi za blagdan sv. Josipa. Kontrast između dvaju rezultata dramatičan je i uvjerljiviji od bilo kakvog teorijskog objašnjenja.
+
+Blok završava kraćim pregledom dodatnih tehnika: iterativno usavršavanje odgovora ("skrati ovo na pola," "promijeni ton"), traženje više verzija istog teksta, ubacivanje vlastitog nacrta s molbom za poboljšanje, te davanje povratne informacije unutar razgovora. Sve se demonstrira na ekranu kako bi sudionici vidjeli da razgovor s AI-jem nije jednokratni čin, nego dijalog.
+
+## Blok 3: Praktična radionica (35 minuta)
+
+Praktični blok strukturiran je kao tri vježbe rastuće samostalnosti. Prva je vođena korak po korak, druga polusamostalna, a treća potpuno samostalna. Ovaj gradijent osmišljen je kako bi sudionici stekli sigurnost prije nego što ostanu prepušteni sami sebi.
+
+Prva vježba uključuje izradu objave za Facebook ili Instagram stranicu župe. Voditelj i sudionici zajedno biraju konkretan događaj (može biti stvaran, iz jedne od prisutnih župa), zajednički grade prompt na ekranu primjenjujući UZKO okvir, pokreću ga u Claudeu i komentiraju rezultat. Zatim voditelj demonstrira iterativno usavršavanje: traži kraću verziju, dodaje biblijski citat, mijenja ton. Nakon toga sudionici ponavljaju postupak na svojim uređajima koristeći vlastiti župni događaj.
+
+Druga vježba nudi izbor između tri scenarija: zahvalnica volonterima koji su pomogli organizirati župni sajam, poziv na sastanak pastoralnog vijeća ili obavijest o promjeni rasporeda misa tijekom ljetnih mjeseci. Sudionici samostalno biraju scenarij, formuliraju prompt i ocjenjuju rezultat. Voditelj cirkulira po prostoriji i pruža individualnu pomoć onima koji su zastali. Nakon otprilike pet minuta rada, dvoje sudionika dijeli svoj rezultat s grupom, što služi kao prilika za zajednički osvrt i učenje iz tuđih pristupa.
+
+Treća vježba pruža potpunu slobodu izbora. Sudionici biraju zadatak koji odgovara njihovoj stvarnoj ulozi u župi: sažimanje crkvenog dokumenta, priprema pitanja za biblijsku skupinu, izrada kratkog razmišljanja za bilten, brainstorming za program mladih, preoblikovanje teksta za drugu ciljnu skupinu ili bilo koji drugi zadatak prema vlastitom nahođenju. Ovaj otvoreni format osigurava da svaki sudionik iz radionice izađe s konkretnim, primjenjivim iskustvom vezanim uz vlastiti rad.
+
+## Blok 4: Generiranje slika (10 minuta)
+
+Uvod u generiranje slika osmišljen je kao kratka demonstracija koja širi perspektivu sudionika o mogućnostima AI-ja, bez pretenzije da ih osposobi za potpuno samostalan rad s ovom tehnologijom.
+
+Voditelj objašnjava da neki AI alati mogu stvarati slike iz tekstualnih opisa, navodi dostupne opcije (ChatGPT, Microsoft Copilot, Canva) i demonstrira postupak uživo koristeći Copilot. Generira se primjerice ilustracija za župnu objavu, pozadina za plakat ili slika koja bi mogla pratiti objavu na društvenim mrežama. Publika sudjeluje predlažući modifikacije prompta ("dodaj djecu," "promijeni u jesensku atmosferu"), čime demonstracija postaje interaktivna.
+
+Ograničenja se izlažu otvoreno: AI često generira ruke s pogrešnim brojem prstiju, tekst unutar slike gotovo je uvijek nečitljiv, fotorealistični stil proizvodi manje uvjerljive rezultate od ilustrativnog, a svaka generirana slika zahtijeva vizualnu provjeru prije uporabe. Ključna poruka ovog bloka jest da generiranje slika može biti korisno polazište kada župa nema pristup grafičkom dizajneru, ali da rezultat uvijek treba tretirati kao nacrt, ne kao gotov proizvod.
+
+## Blok 5: Zaključak (10 minuta)
+
+Završni blok sintetizira cjelokupnu radionicu u tri ključne poruke osmišljene da ostanu u pamćenju sudionika.
+
+Prva poruka glasi: AI je alat, vi ste stručnjak. Model može proizvesti tekst u sekundama, ali ne poznaje župu, vjernike ni posebnosti zajednice. Korisnik donosi mudrost, iskustvo i pastoralni osjećaj; AI donosi brzinu i prvu verziju.
+
+Druga poruka glasi: dobar prompt daje dobar rezultat. UZKO okvir (Uloga, Zadatak, Kontekst, Oblik) omogućuje da s minimalnim ulaganjem vremena u formuliranje upita korisnik dobije višestruko korisniji odgovor.
+
+Treća poruka glasi: pregledajte sve, ne šaljite ništa bez provjere. Ova poruka posebno rezonira u crkvenom kontekstu, gdje netočna informacija ili teološki neprecizan tekst mogu imati ozbiljne posljedice za vjernike koji primaju te sadržaje s povjerenjem.
+
+Sudionicima se dijeli QR kod ili kraći link koji vodi na digitalni letak sa sažetkom UZKO okvira, primjerima promptova za župni rad, poveznicama na alate i kontaktom voditelja za daljnja pitanja. Ovaj resurs osigurava da znanje stečeno na radionici ne ostane ograničeno na taj jedan sat, nego da sudionici imaju oslonac pri prvim samostalnim pokušajima u danima koji slijede.
+
+Radionica završava otvorenom diskusijom u kojoj sudionici dijele što ih je iznenadilo, za koji zadatak bi najprije koristili AI i koje nedoumice još imaju. U grupama od petnaest ili manje sudionika ova razmjena redovito prerasta u bogat razgovor koji sam po sebi učvršćuje naučeno i otvara prostor za međusobnu potporu.
+
+
+# Očekivani ishodi
+
+Nakon završetka radionice sudionici bi trebali biti sposobni samostalno otvoriti AI alat (Claude) i voditi s njim razgovor usmjeren na konkretan zadatak. Trebali bi razumjeti razliku između neodređene upute i strukturiranog prompta te primjenjivati UZKO okvir pri formuliranju upita. Trebali bi prepoznavati situacije u kojima im AI može uštedjeti vrijeme te jednako tako situacije u kojima je ljudski sud nezamjenjiv.
+
+Na razini razumijevanja, sudionici bi trebali moći objasniti u osnovnim crtama što veliki jezični model jest i što nije, zašto AI ponekad generira netočan sadržaj i zašto je svaka provjera nužna. Trebali bi biti svjesni etičkih aspekata korištenja AI-ja u crkvenom kontekstu, posebno u pogledu privatnosti podataka i nezamjenjivosti osobnog pastoralnog pristupa.
+
+Dugoročni cilj, koji nadilazi samu radionicu, jest stvaranje temelja za kulturu informiranog i odgovornog korištenja AI-ja među župnim suradnicima. Radionica predstavlja prvi korak, dok daljnji razvoj ovisi o individualnoj praksi sudionika, eventualnim dodatnim edukacijama i institucionalnoj podršci nadbiskupije.
+
+
+# Zaključak
+
+Umjetna inteligencija u župnom radu nije pitanje sutrašnjice, nego danas prisutna mogućnost koja čeka da bude mudro iskorištena. Župni suradnici koji svakodnevno pišu, planiraju i komuniciraju mogu u AI alatima pronaći pouzdanog pomoćnika za rutinske tekstualne zadatke, čime oslobađaju vrijeme i energiju za ono što nijedan algoritam ne može zamijeniti: ljudsku prisutnost, pastoralni susret i izgradnju zajedništva.
+
+Radionica opisana u ovom radu ne pokušava odgovoriti na sva pitanja koja uporaba AI-ja u crkvenom kontekstu otvara. Ona nudi praktičan, konkretan i etički utemeljen početak. Polazi od pretpostavke da su župni suradnici dovoljno mudri da nove alate koriste odgovorno kada im se pruži prilika da ih razumiju, i dovoljno posvećeni svojem poslanju da tehnologiju stave u službu zajednice, a ne obrnuto.
+
+Možda je najvažnija lekcija ove radionice upravo ona koja nije o tehnologiji: AI je brz, ali zajednica je živa. Tekst koji AI napiše u tri sekunde dobiva smisao tek kada ga stvarna osoba pročita, osjeti i na njega odgovori. U tom pogledu, AI nije budućnost pastorala. On je samo alat koji pomaže da pastoral bude učinkovitiji u onome što je oduvijek bio: susret čovjeka s čovjekom i čovjeka s Bogom.
+
+
+# Popis literature {.unnumbered}
+
+::: {#refs}
+:::
+
+Papa Franjo. *Poruka za 57. Svjetski dan mira: Umjetna inteligencija i mir.* Vatikan, 1. siječnja 2024.
+
+Papinsko vijeće za kulturu. *Umjetna inteligencija: etička promišljanja.* Vatikan, 2020.
+
+Anthropic. *Claude: An AI Assistant.* Dostupno na: <https://claude.ai>
+
+Microsoft. *Copilot.* Dostupno na: <https://copilot.microsoft.com>

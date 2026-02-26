@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="">
+<meta name="dcterms.date" content="2026-02-26">
+
+<title>Razumjeti umjetnu inteligenciju u službi župnog rada</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="razumjeti-ai-u-zupnom-radu_files/libs/clipboard/clipboard.min.js"></script>
+<script src="razumjeti-ai-u-zupnom-radu_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="razumjeti-ai-u-zupnom-radu_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="razumjeti-ai-u-zupnom-radu_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="razumjeti-ai-u-zupnom-radu_files/libs/quarto-html/popper.min.js"></script>
+<script src="razumjeti-ai-u-zupnom-radu_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="razumjeti-ai-u-zupnom-radu_files/libs/quarto-html/anchor.min.js"></script>
+<link href="razumjeti-ai-u-zupnom-radu_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="razumjeti-ai-u-zupnom-radu_files/libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="razumjeti-ai-u-zupnom-radu_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="razumjeti-ai-u-zupnom-radu_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="razumjeti-ai-u-zupnom-radu_files/libs/bootstrap/bootstrap-4d7f0bce1131f3e5f9547cd857cfbfc8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sadržaj</h2>
+   
+  <ul class="collapse">
+  <li><a href="#zašto-bi-se-župni-suradnik-trebao-uopće-baviti-umjetnom-inteligencijom" id="toc-zašto-bi-se-župni-suradnik-trebao-uopće-baviti-umjetnom-inteligencijom" class="nav-link active" data-scroll-target="#zašto-bi-se-župni-suradnik-trebao-uopće-baviti-umjetnom-inteligencijom">Zašto bi se župni suradnik trebao uopće baviti umjetnom inteligencijom</a></li>
+  <li><a href="#što-je-zapravo-umjetna-inteligencija-i-kako-funkcionira" id="toc-što-je-zapravo-umjetna-inteligencija-i-kako-funkcionira" class="nav-link" data-scroll-target="#što-je-zapravo-umjetna-inteligencija-i-kako-funkcionira">Što je zapravo umjetna inteligencija i kako funkcionira</a></li>
+  <li><a href="#što-ai-može-učiniti-za-vaš-svakodnevni-rad-u-župi" id="toc-što-ai-može-učiniti-za-vaš-svakodnevni-rad-u-župi" class="nav-link" data-scroll-target="#što-ai-može-učiniti-za-vaš-svakodnevni-rad-u-župi">Što AI može učiniti za vaš svakodnevni rad u župi</a>
+  <ul class="collapse">
+  <li><a href="#pisanje-i-preoblikovanje-tekstova" id="toc-pisanje-i-preoblikovanje-tekstova" class="nav-link" data-scroll-target="#pisanje-i-preoblikovanje-tekstova">Pisanje i preoblikovanje tekstova</a></li>
+  <li><a href="#sažimanje-i-pojednostavljivanje" id="toc-sažimanje-i-pojednostavljivanje" class="nav-link" data-scroll-target="#sažimanje-i-pojednostavljivanje">Sažimanje i pojednostavljivanje</a></li>
+  <li><a href="#brainstorming-i-generiranje-ideja" id="toc-brainstorming-i-generiranje-ideja" class="nav-link" data-scroll-target="#brainstorming-i-generiranje-ideja">Brainstorming i generiranje ideja</a></li>
+  <li><a href="#priprema-kateheze-i-edukativnog-sadržaja" id="toc-priprema-kateheze-i-edukativnog-sadržaja" class="nav-link" data-scroll-target="#priprema-kateheze-i-edukativnog-sadržaja">Priprema kateheze i edukativnog sadržaja</a></li>
+  <li><a href="#prijevod-i-jezična-prilagodba" id="toc-prijevod-i-jezična-prilagodba" class="nav-link" data-scroll-target="#prijevod-i-jezična-prilagodba">Prijevod i jezična prilagodba</a></li>
+  </ul></li>
+  <li><a href="#kako-razgovarati-s-ai-jem-vještina-pisanja-dobrih-uputa" id="toc-kako-razgovarati-s-ai-jem-vještina-pisanja-dobrih-uputa" class="nav-link" data-scroll-target="#kako-razgovarati-s-ai-jem-vještina-pisanja-dobrih-uputa">Kako razgovarati s AI-jem: vještina pisanja dobrih uputa</a>
+  <ul class="collapse">
+  <li><a href="#četiri-elementa-dobre-upute" id="toc-četiri-elementa-dobre-upute" class="nav-link" data-scroll-target="#četiri-elementa-dobre-upute">Četiri elementa dobre upute</a></li>
+  <li><a href="#razlika-u-praksi" id="toc-razlika-u-praksi" class="nav-link" data-scroll-target="#razlika-u-praksi">Razlika u praksi</a></li>
+  <li><a href="#razgovor-ne-jednokratni-zahtjev" id="toc-razgovor-ne-jednokratni-zahtjev" class="nav-link" data-scroll-target="#razgovor-ne-jednokratni-zahtjev">Razgovor, ne jednokratni zahtjev</a></li>
+  <li><a href="#dodatne-tehnike-koje-štede-vrijeme" id="toc-dodatne-tehnike-koje-štede-vrijeme" class="nav-link" data-scroll-target="#dodatne-tehnike-koje-štede-vrijeme">Dodatne tehnike koje štede vrijeme</a></li>
+  </ul></li>
+  <li><a href="#ono-što-ai-ne-može-i-zašto-je-to-jednako-važno-razumjeti" id="toc-ono-što-ai-ne-može-i-zašto-je-to-jednako-važno-razumjeti" class="nav-link" data-scroll-target="#ono-što-ai-ne-može-i-zašto-je-to-jednako-važno-razumjeti">Ono što AI ne može i zašto je to jednako važno razumjeti</a>
+  <ul class="collapse">
+  <li><a href="#halucinacije-kada-ai-laže-s-punim-uvjerenjem" id="toc-halucinacije-kada-ai-laže-s-punim-uvjerenjem" class="nav-link" data-scroll-target="#halucinacije-kada-ai-laže-s-punim-uvjerenjem">Halucinacije: kada AI laže s punim uvjerenjem</a></li>
+  <li><a href="#teološka-nepreciznost-delikatna-opasnost" id="toc-teološka-nepreciznost-delikatna-opasnost" class="nav-link" data-scroll-target="#teološka-nepreciznost-delikatna-opasnost">Teološka nepreciznost: delikatna opasnost</a></li>
+  <li><a href="#nedostatak-pastoralnog-suda" id="toc-nedostatak-pastoralnog-suda" class="nav-link" data-scroll-target="#nedostatak-pastoralnog-suda">Nedostatak pastoralnog suda</a></li>
+  <li><a href="#nedostatak-aktualnih-informacija" id="toc-nedostatak-aktualnih-informacija" class="nav-link" data-scroll-target="#nedostatak-aktualnih-informacija">Nedostatak aktualnih informacija</a></li>
+  </ul></li>
+  <li><a href="#slike-stvorene-umjetnom-inteligencijom-mogućnosti-i-granice" id="toc-slike-stvorene-umjetnom-inteligencijom-mogućnosti-i-granice" class="nav-link" data-scroll-target="#slike-stvorene-umjetnom-inteligencijom-mogućnosti-i-granice">Slike stvorene umjetnom inteligencijom: mogućnosti i granice</a></li>
+  <li><a href="#etika-i-odgovornost-koristiti-ai-u-skladu-s-vrednotama-koje-živite" id="toc-etika-i-odgovornost-koristiti-ai-u-skladu-s-vrednotama-koje-živite" class="nav-link" data-scroll-target="#etika-i-odgovornost-koristiti-ai-u-skladu-s-vrednotama-koje-živite">Etika i odgovornost: koristiti AI u skladu s vrednotama koje živite</a>
+  <ul class="collapse">
+  <li><a href="#privatnost-kao-konkretan-imperativ" id="toc-privatnost-kao-konkretan-imperativ" class="nav-link" data-scroll-target="#privatnost-kao-konkretan-imperativ">Privatnost kao konkretan imperativ</a></li>
+  <li><a href="#transparentnost-bez-pretjerivanja" id="toc-transparentnost-bez-pretjerivanja" class="nav-link" data-scroll-target="#transparentnost-bez-pretjerivanja">Transparentnost bez pretjerivanja</a></li>
+  <li><a href="#osobni-susret-nije-zamjenjiv" id="toc-osobni-susret-nije-zamjenjiv" class="nav-link" data-scroll-target="#osobni-susret-nije-zamjenjiv">Osobni susret nije zamjenjiv</a></li>
+  <li><a href="#odgovornost-uvijek-leži-na-osobi" id="toc-odgovornost-uvijek-leži-na-osobi" class="nav-link" data-scroll-target="#odgovornost-uvijek-leži-na-osobi">Odgovornost uvijek leži na osobi</a></li>
+  </ul></li>
+  <li><a href="#stav-crkve-prema-tehnologiji-širi-kontekst" id="toc-stav-crkve-prema-tehnologiji-širi-kontekst" class="nav-link" data-scroll-target="#stav-crkve-prema-tehnologiji-širi-kontekst">Stav Crkve prema tehnologiji: širi kontekst</a></li>
+  <li><a href="#kako-početi-prvi-koraci-za-onoga-tko-nikada-nije-koristio-ai" id="toc-kako-početi-prvi-koraci-za-onoga-tko-nikada-nije-koristio-ai" class="nav-link" data-scroll-target="#kako-početi-prvi-koraci-za-onoga-tko-nikada-nije-koristio-ai">Kako početi: prvi koraci za onoga tko nikada nije koristio AI</a></li>
+  <li><a href="#zaključna-misao" id="toc-zaključna-misao" class="nav-link" data-scroll-target="#zaključna-misao">Zaključna misao</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="..\razumjeti-ai-u-zupnom-radu.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Razumjeti umjetnu inteligenciju u službi župnog rada</h1>
+<p class="subtitle lead">Cjelovit vodič za župne suradnike</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 26, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="zašto-bi-se-župni-suradnik-trebao-uopće-baviti-umjetnom-inteligencijom" class="level1">
+<h1>Zašto bi se župni suradnik trebao uopće baviti umjetnom inteligencijom</h1>
+<p>Zamislite sljedeću situaciju. Sjedite u župnom uredu u ponedjeljak ujutro. Na stolu vas čeka popis zadataka koji se otegnuo preko cijele stranice. Trebate napisati objavu za Facebook stranicu župe o korizmenoj duhovnoj obnovi koja počinje za dva tjedna. Trebate sastaviti zahvalnicu volonterima koji su pomogli na župnom sajmu. Trebate preoblikovati tekst biskupijskog okružnog pisma u verziju razumljivu obiteljima s djecom. Trebate osmisliti temu i okvirni plan za sljedeći susret biblijske skupine. Trebate odgovoriti na tri emaila, od kojih jedan zahtijeva diplomatski osjećaj jer se radi o zamolbi koju morate odbiti. I usput, telefon zvoni jer netko pita koliko je sati misa u uskrsnom trodnevlju.</p>
+<p>Svaki od tih zadataka sam po sebi nije osobito složen. Ali zajedno oduzimaju sate, i to sate koje biste radije proveli u razgovoru s obitelji koja se upravo doselila u župu, u posjetu starijoj gospođi koja živi sama ili u pripremi stvarno dobre kateheze umjesto one napisane u žurbi. Administrativni posao guta vrijeme koje bi trebalo pripadati ljudima.</p>
+<p>Upravo tu ulazi u priču umjetna inteligencija. Ne kao zamjena za ono što radite, nego kao pomoćnik koji preuzima dio tereta rutinskog pisanja. AI neće posjetiti bolesnu osobu umjesto vas. Neće osjetiti napetost na sastanku vijeća. Neće odlučiti je li prikladno nazvati obitelj koja prolazi kroz krizu ili im dati još malo prostora. Sve to ostaje vaše. Ali može napisati prvu verziju tog emaila u trideset sekundi umjesto u dvadeset minuta. Može predložiti sedam ideja za korizmeni program dok vi još razmišljate o prvoj. Može taj dugačak tekst biskupijskog pisma pretočiti u sažetak od jedne stranice za vaše župno vijeće.</p>
+<p>Ovaj tekst napisan je za vas. Ne za informatičare, ne za programere, ne za ljude koji uživaju u tehničkim terminima. Napisan je za osobe koje rade u župi i žele razumjeti može li im ova nova tehnologija pomoći, i ako može, kako je koristiti pametno, odgovorno i u skladu s vrednotama koje njegujete.</p>
+</section>
+<section id="što-je-zapravo-umjetna-inteligencija-i-kako-funkcionira" class="level1">
+<h1>Što je zapravo umjetna inteligencija i kako funkcionira</h1>
+<p>Pojam “umjetna inteligencija” izaziva čitav raspon reakcija, od oduševljenja do straha. Dio tog raspona proizlazi iz nesporazuma o tome što AI zapravo jest. Filmovi i mediji prikazuju ga kao nešto blisko ljudskoj svijesti, kao strojeve koji misle, osjećaju i donose samostalne odluke. Stvarnost je znatno prozaičnija, ali na svoj način fascinantna.</p>
+<p>Kada otvorite alat poput Claudea ili ChatGPT-a i utipkate pitanje, na ekranu se pojavljuje odgovor koji nalikuje onome što bi napisala upućena, elokventna osoba. Ta iluzija razumijevanja zaslužuje objašnjenje jer je ključ za razumijevanje i snaga i slabosti ove tehnologije.</p>
+<p>AI alati kojima ćete se koristiti u praksi pripadaju kategoriji koja se zove veliki jezični modeli. Način na koji nastaju može se objasniti u tri koraka.</p>
+<p>U prvom koraku, model “čita” enormnu količinu teksta. Govorimo o milijardama stranica: knjige, članci, web stranice, razgovori, dokumenti, enciklopedije, forumi, prijevodi, znanstveni radovi, kuharice, propovijedi, zakonski akti, pjesme. Sve što je čovječanstvo napisalo i objavilo na internetu potencijalno je dio tog materijala.</p>
+<p>U drugom koraku, iz te mase teksta model uči obrasce. Ne pamti rečenice napamet (barem ne u doslovnom smislu), nego uočava kako jezik funkcionira. Uči da nakon “Dragi” obično slijedi neko ime ili oslovljavanje. Uči da formalna pisma imaju drukčiju strukturu od prijateljskih poruka. Uči da se u katoličkom kontekstu koristi specifičan vokabular koji se razlikuje od protestantskog ili pravoslavnog. Uči tisuće takvih obrazaca na svim razinama, od redoslijeda riječi u rečenici do strukture čitavih tekstova.</p>
+<p>U trećem koraku, taj naučeni sustav obrazaca koristi se za generiranje novog teksta. Kada mu postavite pitanje, model zapravo ne razmišlja o vašem pitanju onako kako vi razmišljate. On predviđa, riječ po riječ, koji bi tekst bio najkorisniji i najvjerojatniji nastavak vašeg upita s obzirom na sve obrasce koje je naučio. Rezultat toga često izgleda zapanjujuće inteligentno. Ali mehanizam iza njega bliži je izuzetno sofisticiranom prepoznavanju uzoraka nego ljudskom razmišljanju.</p>
+<p>Postoji analogija koja dobro prenosi ovu ideju. Zamislite osobu koja je cijeli život provela u golemoj knjižnici. Pročitala je svaku knjigu koja postoji. Zna kako zvuče propovijedi, kako se pišu pisma, kako se formuliraju molitve, kako se sažimaju dokumenti. Ali nikada nije izašla iz te knjižnice. Nikada nije razgovarala s živom osobom. Nikada nije prisustvovala misi, nikada nije osjetila miris tamjana, nikada nije vidjela suze na nečijem licu. Zna sve o tome kako se o tim stvarima piše, ali nema nikakvo iskustvo tih stvari samih.</p>
+<p>Ova analogija pomaže razumjeti zašto AI može napisati propovijed koja zvuči uvjerljivo, ali ne može osjetiti što određena zajednica u određenom trenutku treba čuti. Zašto može sastaviti pismo utjehe koje zvuči toplo, ali ne poznaje Mariju i ne zna da joj je muž preminuo nakon duge bolesti i da će određene formulacije, koliko god bile lijepe, zvučati šuplje nekome tko trpi stvarnu bol. Tu razliku između poznavanja jezika i poznavanja života važno je imati na umu svaki put kada koristite AI.</p>
+</section>
+<section id="što-ai-može-učiniti-za-vaš-svakodnevni-rad-u-župi" class="level1">
+<h1>Što AI može učiniti za vaš svakodnevni rad u župi</h1>
+<p>Razumjeti što AI može dobro jednako je važno kao razumjeti što ne može. Područja u kojima ovi alati dosljedno pokazuju visoku korisnost poklapaju se s velikim dijelom onoga što župni suradnici rade svaki dan.</p>
+<section id="pisanje-i-preoblikovanje-tekstova" class="level2">
+<h2 class="anchored" data-anchor-id="pisanje-i-preoblikovanje-tekstova">Pisanje i preoblikovanje tekstova</h2>
+<p>Ovo je najočitija i najčešća primjena. AI može napisati prvu verziju gotovo bilo kakvog teksta koji trebate u župnom radu. Objava za Facebook stranicu župe? Trideset sekundi. Službeni email biskupijskom uredu? Jedna minuta. Kratki tekst za župni bilten o nadolazećem blagdanu? Četrdeset sekundi.</p>
+<p>Ali korisnost ne leži samo u pisanju od nule. Često je još vrednija sposobnost preoblikovanja postojećeg teksta. Recimo da ste napisali obavijest o promjeni rasporeda misa, ali zvuči suhoparno i birokratski. Možete tekst ubaciti u Claude i zamoliti ga da zadrži sve informacije ali promijeni ton u topliji i pristupačniji. Ili obrnuto: imate neformalan zapis sa sastanka i trebate ga pretvoriti u službeni zapisnik.</p>
+<p>Posebno je vrijedna mogućnost prilagodbe istog sadržaja za različite kanale i publike. Isti događaj trebate najaviti u župnom biltenu (formalniji ton, duži tekst), na Facebooku (topliji ton, kraće, s pozivom na akciju), na Instagramu (još kraće, vizualniji jezik) i možda u emailu za specifičnu skupinu poput zbora ili ministranata (osobniji ton). Bez AI-ja, to su četiri odvojena zadatka pisanja. S AI-jem, napišete jedan dobar opis događaja i zamolite ga da ga prilagodi za svaki kanal. Ono što je trajalo sat sada traje deset minuta.</p>
+</section>
+<section id="sažimanje-i-pojednostavljivanje" class="level2">
+<h2 class="anchored" data-anchor-id="sažimanje-i-pojednostavljivanje">Sažimanje i pojednostavljivanje</h2>
+<p>Crkva proizvodi mnogo teksta. Pastoralna pisma, enciklike, dokumenti Biskupske konferencije, odluke crkvenih tijela. Mnogi od tih dokumenata važni su za rad župe, ali su pisani jezikom i u opsegu koji nije lako prenijeti široj zajednici.</p>
+<p>AI može takav dokument sažeti na jednu stranicu ili čak na jedan paragraf, zadržavajući ključne poruke. Može ga preoblikovati u jezik razumljiv osobama bez teološkog obrazovanja. Može iz njega izdvojiti točke koje su relevantne za konkretnu situaciju vaše župe, dok ostalo izostavlja.</p>
+<p>Zamislite da trebate pripremiti kratki pregled neke papine pobudnice za članove župnog pastoralnog vijeća prije njihovog sastanka. Umjesto da provedete dva sata čitajući i bilježeći, možete ubaciti tekst u Claude i zamoliti ga da napravi sažetak od jedne stranice s naglaskom na praktične implikacije za župni rad. Rezultat neće biti savršen i svakako ga trebate pregledati, jer AI može pogrešno protumačiti naglasak ili izostaviti nešto što je za vašu situaciju važno. Ali umjesto da počinjete od nule, počinjete od nacrta koji je već 80 posto onoga što vam treba.</p>
+</section>
+<section id="brainstorming-i-generiranje-ideja" class="level2">
+<h2 class="anchored" data-anchor-id="brainstorming-i-generiranje-ideja">Brainstorming i generiranje ideja</h2>
+<p>Postoje trenuci u župnom radu kada ono što vam treba nije konkretan tekst, nego ideja. Trebate osmisliti program za korizmeno razdoblje. Trebate smisliti aktivnosti za obiteljski dan župe. Trebate temu za ovomjesečni susret mladih. Trebate nešto novo jer se osjećate kao da ponavljate iste stvari iz godine u godinu.</p>
+<p>U tim trenucima AI je izuzetno koristan sugovornik. Možete mu reći “Predloži mi deset ideja za korizmeni program za mlade u dobi od 15 do 20 godina. Program se sastoji od pet tjednih susreta, svaki traje sat i pol. Želim da bude interaktivan, da uključuje elemente kreativnosti i da se temelji na evanđeoskim tekstovima korizmenog razdoblja.” U manje od minute dobit ćete deset razrađenih prijedloga.</p>
+<p>Nijedan od tih prijedloga ne morate prihvatiti doslovno. Možda vam se jedan sviđa ali trebate ga prilagoditi. Možda vas drugi potakne na vlastitu ideju koja je potpuno drugačija. Možda treći sadrži element koji možete uklopiti u nešto četvrto. Poanta nije da AI smisli savršen program umjesto vas, nego da vam ponudi materijal od kojeg možete graditi. Krenuti od deset prijedloga neusporedivo je lakše nego zuriti u prazan papir.</p>
+</section>
+<section id="priprema-kateheze-i-edukativnog-sadržaja" class="level2">
+<h2 class="anchored" data-anchor-id="priprema-kateheze-i-edukativnog-sadržaja">Priprema kateheze i edukativnog sadržaja</h2>
+<p>Katehetice i katehete posebno mogu imati koristi od AI-ja. Priprema kateheze zahtijeva ne samo teološko znanje nego i pedagošku kreativnost: kako složenu temu učiniti razumljivom djeci? Kako osmisliti aktivnosti koje drže pažnju? Kako formulirati pitanja za raspravu koja potiču razmišljanje, a ne samo reprodukciju naučenog?</p>
+<p>AI može pomoći na svim tim razinama. Možete mu zadati temu (primjerice sakrament pomirenja za djecu koja se pripremaju za prvu ispovijed) i zamoliti ga da predloži strukturu susreta, napiše kratku priču koja ilustrira temu na djetetu blizak način, osmisli igru ili aktivnost vezanu uz sadržaj ili formulira pet pitanja za razgovor prilagođenih dobi. Također možete ubaciti svoj postojeći materijal i zamoliti ga da ga prilagodi za mlađu ili stariju dobnu skupinu.</p>
+<p>Ovdje je posebno važna napomena o teološkoj provjeri, o čemu će detaljnije biti riječi u dijelu o ograničenjima. AI ne razlikuje katoličku doktrinu od drugih kršćanskih tradicija i može proizvesti sadržaj koji zvuči ispravno ali nije sasvim u skladu s naukom Crkve. Svaki katehetski materijal koji proizlazi iz rada s AI-jem mora proći teološku provjeru osobe koja poznaje tematiku.</p>
+</section>
+<section id="prijevod-i-jezična-prilagodba" class="level2">
+<h2 class="anchored" data-anchor-id="prijevod-i-jezična-prilagodba">Prijevod i jezična prilagodba</h2>
+<p>Župe s višejezičnom zajednicom suočavaju se s praktičnim izazovom komuniciranja na više jezika. AI može prevesti obavijest na engleski, njemački, talijanski ili gotovo bilo koji drugi jezik. Za jednostavnije tekstove poput obavijesti o rasporedu misa ili poziva na događanje kvaliteta prijevoda sasvim je funkcionalna.</p>
+<p>Osim prijevoda između jezika, AI je koristan i za prijevod između registara istog jezika. Tekst pisan za teologe možete preoblikovati za običan govor. Tekst pisan za odrasle možete prilagoditi za mlade. Formalan ton možete omekšati u prijateljski, ili obratno.</p>
+</section>
+</section>
+<section id="kako-razgovarati-s-ai-jem-vještina-pisanja-dobrih-uputa" class="level1">
+<h1>Kako razgovarati s AI-jem: vještina pisanja dobrih uputa</h1>
+<p>Od svega što trebate naučiti o AI-ju, ovo je najvažniji dio. Kvaliteta odgovora koji ćete dobiti gotovo u potpunosti ovisi o kvaliteti upute koju zadate. U stručnom žargonu ta se uputa naziva “prompt”, a vještina njezina oblikovanja “prompt engineering.” Ali iza tih tehničkih naziva krije se nešto vrlo jednostavno i intuitivno: sposobnost da jasno objasnite što vam treba.</p>
+<p>Većina ljudi koji prvi put koriste AI upiše nešto kratko i neodređeno, poput “Napiši nešto o misi.” Dobiju jednako neodređen odgovor: generičan tekst koji bi mogao pripadati bilo kojoj župi, bilo kojoj prilici, bilo kojoj publici. Na temelju tog iskustva zaključe da AI nije osobito koristan. Ali problem nije bio u alatu, nego u uputi.</p>
+<p>Pomislite na to ovako. Zamislite da u župu dolazi novi volonter. Kažete mu “napravi nešto za nedjelju.” Što će napraviti? Ne znate, a ni on ne zna. Ali ako mu kažete “pripremi 30 stolica u dvorani u polukrug, postavi projektor na stol ispred, ispiši na ploču raspored pjesama za misu u 10 sati i stavi košaru za darove pokraj ulaza,” dobit ćete upravo ono što vam treba. AI funkcionira na isti način. Što preciznije objasniš, to bolji rezultat dobiješ.</p>
+<section id="četiri-elementa-dobre-upute" class="level2">
+<h2 class="anchored" data-anchor-id="četiri-elementa-dobre-upute">Četiri elementa dobre upute</h2>
+<p>Razvijen je jednostavan okvir koji pomaže strukturirati upute za AI. Nazvan je UZKO prema početnim slovima četiriju elemenata: Uloga, Zadatak, Kontekst i Oblik.</p>
+<p><strong>Uloga</strong> znači reći AI-ju iz koje perspektive treba djelovati. Kada mu kažete “Ti si iskusan komunikator rimokatoličke župe,” on prilagođava vokabular, ton i sadržaj toj ulozi. Kada mu kažete “Ti si kateheta koji priprema sadržaj za djecu od 8 do 10 godina,” piše posve drukčije. Uloga oblikuje sve što slijedi.</p>
+<p><strong>Zadatak</strong> znači precizno definirati što vam treba. Ne “napiši nešto,” nego “napiši objavu za Facebook stranicu župe.” Ne “pomozi mi s katehezom,” nego “predloži strukturu za katehetski susret od 45 minuta na temu oprosta.” Što je zadatak jasniji, to je rezultat bliži onome što zaista trebate.</p>
+<p><strong>Kontekst</strong> znači dati AI-ju informacije koje su mu potrebne da bi rezultat bio relevantan. Ako tražite objavu za Facebook, kontekst uključuje o kojem je događaju riječ, kada je i gdje, tko je ciljana publika, što je posebno ili drugačije u vezi s ovim konkretnim događajem. Bez konteksta AI može proizvesti samo generičan tekst. S kontekstom proizvodi nešto što zvuči kao da je pisano za vašu župu.</p>
+<p><strong>Oblik</strong> znači odrediti kako rezultat treba izgledati. Koliko dug? Koji ton: svečan, topao, mladalački, formalan? Treba li sadržavati poziv na akciju? Treba li završavati molitvom? Treba li biti strukturiran kao pismo s jasnim uvodom, tijelom i zaključkom, ili kao kratka poruka od tri rečenice? Ove naizgled sitne upute imaju ogroman utjecaj na korisnost rezultata.</p>
+</section>
+<section id="razlika-u-praksi" class="level2">
+<h2 class="anchored" data-anchor-id="razlika-u-praksi">Razlika u praksi</h2>
+<p>Pogledajmo kako ovo izgleda na konkretnom primjeru.</p>
+<p>Uputa bez UZKO okvira mogla bi glasiti: “Napiši nešto o misi za blagdan.” Rezultat koji ćete dobiti bit će općenit tekst o značenju liturgijskog slavlja, primjenjiv na bilo koji blagdan u bilo kojoj župi na svijetu. Možda će biti dobro napisan, ali neće vam biti osobito koristan.</p>
+<p>Uputa s UZKO okvirom mogla bi glasiti: “Ti si komunikator župe sv. Petra u Dubravi (uloga). Napiši objavu za Facebook stranicu župe (zadatak) koja poziva vjernike na svečanu misu povodom blagdana sv. Petra i Pavla u nedjelju 29. lipnja u 10 sati. Nakon mise predviđeno je zajedničko druženje na župnom dvorištu uz roštilj i zabavu za djecu. Očekujemo obitelji s djecom i starije vjernike (kontekst). Objava neka bude topla i radosna, 3 do 5 rečenica, s jasnim informacijama o vremenu i mjestu i s pozivom da potvrde dolazak u komentarima (oblik).”</p>
+<p>Razlika između ova dva rezultata dramatična je. Drugi tekst moći ćete objaviti gotovo bez izmjena. Prvi ćete morati potpuno prepisati i dodati sve informacije koje ste propustili zadati.</p>
+</section>
+<section id="razgovor-ne-jednokratni-zahtjev" class="level2">
+<h2 class="anchored" data-anchor-id="razgovor-ne-jednokratni-zahtjev">Razgovor, ne jednokratni zahtjev</h2>
+<p>Jedna od najvažnijih stvari koje trebate razumjeti o radu s AI-jem jest da se ne radi o jednokratnom pitanju i odgovoru. Radi se o razgovoru. Kada dobijete prvi rezultat, možete nastaviti.</p>
+<p>“Ovo je predugo, skrati na tri rečenice.” “Ton je previše formalan, učini ga topliji.” “Dodaj na kraju kratku molitvu vezanu uz blagdan.” “Daj mi još jednu verziju, ali ovaj put za Instagram, kraće i mladalačkije.” “Zapravo, umjesto roštilja napiši da je predviđen piknik.” AI pamti cijeli razgovor i prilagođava se vašim uputama korak po korak.</p>
+<p>Ovaj iterativan proces zapravo nalikuje suradnji s kolegom. Zamolili ste ga da nešto napiše, pogledali ste rezultat, dali povratnu informaciju i on je prilagodio tekst. Jedina razlika je što AI to radi u sekundama umjesto u satima i nikada se ne uvrijedi kada mu kažete da nešto ne valja.</p>
+<p>Praktičan savjet: nemojte očekivati savršenstvo iz prvog pokušaja. Pišite dobru prvu uputu koristeći UZKO okvir, ali računajte na dva do tri kruga usavršavanja. Taj proces traje ukupno tri do pet minuta za većinu tekstova i gotovo uvijek daje bolji rezultat nego pokušaj da sve savršeno definirate u jednom zahtjevu.</p>
+</section>
+<section id="dodatne-tehnike-koje-štede-vrijeme" class="level2">
+<h2 class="anchored" data-anchor-id="dodatne-tehnike-koje-štede-vrijeme">Dodatne tehnike koje štede vrijeme</h2>
+<p>Osim UZKO okvira, nekoliko praktičnih tehnika može učiniti vaš rad s AI-jem još učinkovitijim.</p>
+<p>Možete zatražiti više verzija istog teksta. Recite mu “Napiši tri različite verzije ove objave” i dobit ćete tri varijante s različitim pristupima, od kojih možete odabrati najbolju ili kombinirati elemente iz više njih.</p>
+<p>Možete mu dati vlastiti nacrt da ga poboljša. Umjesto da piše od nule, ubacite tekst koji ste već napisali i zamolite ga da ga učini jasnijim, kraćim, topliji ili formalnijim. Ovo je često brže i rezultat je bliži vašem osobnom stilu jer AI polazi od vaših riječi, a ne od svojih obrazaca.</p>
+<p>Možete mu zadati format vrlo izričito. Ako trebate tekst podijeljen na tri paragrafa s podnaslovima, recite mu to. Ako trebate da email ima jasno definiran predmet, uvod, tijelo i završetak s pozdravom, navedite to u uputi. AI slijedi formatne upute vrlo vjerno.</p>
+<p>I konačno, možete koristiti AI za zadatke za koje nemate vremena, a ne za zadatke koje volite raditi. Ako uživate u pisanju razmišljanja za bilten, nastavite to raditi sami. Koristite AI za ono što vam oduzima energiju bez da vam daje zadovoljstvo: rutinske emailove, prilagodbe tekstova za različite kanale, sažetke dokumenata.</p>
+</section>
+</section>
+<section id="ono-što-ai-ne-može-i-zašto-je-to-jednako-važno-razumjeti" class="level1">
+<h1>Ono što AI ne može i zašto je to jednako važno razumjeti</h1>
+<p>Svaka ozbiljna rasprava o mogućnostima nekog alata mora uključivati i iskrenu raspravu o njegovim ograničenjima. U slučaju AI-ja, ograničenja nisu manja zanimljiva od mogućnosti, a za kontekst crkvenog rada neka od njih imaju posebnu težinu.</p>
+<section id="halucinacije-kada-ai-laže-s-punim-uvjerenjem" class="level2">
+<h2 class="anchored" data-anchor-id="halucinacije-kada-ai-laže-s-punim-uvjerenjem">Halucinacije: kada AI laže s punim uvjerenjem</h2>
+<p>Najuočljivije ograničenje velikih jezičnih modela jest njihova sklonost da povremeno generiraju sadržaj koji zvuči savršeno uvjerljivo, ali je činjenično potpuno pogrešan. U stručnom žargonu to se naziva “halucinacijom,” i naziv je prikladniji nego što se čini na prvi pogled: model doslovno “vidi” tekst koji ne postoji u stvarnosti.</p>
+<p>Što to znači u praksi? AI vam može navesti citat iz enciklike koji zvuči poput nečega što bi Papa doista napisao, ali koji zapravo ne postoji. Može pripisati izreku krivom svecu. Može navesti pogrešan datum liturgijskog blagdana. Može izmisliti podatak koji zvuči uvjerljivo, poput “prema istraživanju iz 2023. godine, 67% mladih katolika smatra…” kada takvo istraživanje nikada nije provedeno.</p>
+<p>Razlog za ovu pojavu leži u samom načinu na koji model funkcionira. On ne razlikuje istinito od vjerojatnog. Generira tekst koji statistički odgovara kontekstu, bez mehanizma za provjeru istinitosti. Kada u kontekstu katoličke teologije postoji prostor za rečenicu koja zvuči kao citat iz enciklike, model će proizvesti takvu rečenicu bez obzira na to postoji li taj citat doista.</p>
+<p>Posljedica je jasna i ne trpi iznimke: svaki tekst koji AI proizvede mora proći ljudsku provjeru prije objave ili uporabe. Svaki. Bez iznimke. Ovo nije preporuka, nego apsolutno pravilo za odgovorno korištenje.</p>
+</section>
+<section id="teološka-nepreciznost-delikatna-opasnost" class="level2">
+<h2 class="anchored" data-anchor-id="teološka-nepreciznost-delikatna-opasnost">Teološka nepreciznost: delikatna opasnost</h2>
+<p>Ovo ograničenje zaslužuje posebnu pozornost u kontekstu crkvenog rada jer je teže uočljivo od otvorene činjenične pogreške.</p>
+<p>AI je tijekom svog treniranja apsorbirao golemu količinu religijskog teksta. No taj tekst dolazi iz različitih kršćanskih tradicija: katoličke, pravoslavne, protestantske, evangeličke, pentekostalne i mnogih drugih. Model ne razumije razlike među njima na način na koji ih razumije teolog. Za njega su to sve obrasci religijskog jezika koji se mogu koristiti za generiranje teksta u religijskom kontekstu.</p>
+<p>U praksi to znači da AI može, na primjer, koristiti pojam “Večera Gospodnja” umjesto “Euharistija” jer su oba česta u kršćanskom diskursu, ne razumijevajući da terminologija nosi teološku težinu. Može opisati sakrament pomirenja jezikom koji odražava protestantsko razumijevanje oprosta više nego katoličko. Može iznijeti teološko mišljenje kao utvrđenu nauku ili, obratno, relativizirati ono što Crkva smatra definiranom dogmom.</p>
+<p>Ove pogreške osobito su opasne upravo zato što nisu očite. Činjeničnu pogrešku (pogrešan datum, nepostojeći citat) lakše je uočiti. Suptilno iskrivljenje teološkog naglaska može proći neopaženo, posebno kod osoba koje nemaju duboko teološko obrazovanje. Stoga za svaki sadržaj koji se tiče vjere, sakramenata, moralne teologije ili tumačenja Svetog pisma vrijedi pojačana pozornost pri provjeri.</p>
+</section>
+<section id="nedostatak-pastoralnog-suda" class="level2">
+<h2 class="anchored" data-anchor-id="nedostatak-pastoralnog-suda">Nedostatak pastoralnog suda</h2>
+<p>Ovo ograničenje najdublje je od svih i ujedno je ono koje najjasnije pokazuje zašto AI ne može zamijeniti ljudski rad u župi.</p>
+<p>Pastoralni sud je sposobnost da u konkretnoj situaciji prepoznate što je pravo, dobro i potrebno za konkretnu osobu ili zajednicu. On ne proizlazi iz znanja (iako znanje pomaže), nego iz iskustva, empatije, vjere i poznavanja ljudi s kojima radite. Kada pišete pismo obitelji koja je izgubila dijete, znate (ili biste trebali znati) da postoje formulacije koje tješe i formulacije koje, koliko god bile dobro napisane, zvuče šuplje. Tu razliku ne možete naučiti iz knjige. Naučite je živeći uz ljude.</p>
+<p>AI nema ništa od toga. Ne poznaje vašu zajednicu. Ne zna da gospodin Marko uvijek sjedi u zadnjoj klupi i da iza njegove šutljivosti stoji samoća, a ne nezainteresiranost. Ne zna da gospođa Ana već treći put ove godine organizira druženje i da joj treba odmor, a ne još jedan zadatak. Ne zna da je napetost na vijeću zapravo povezana s nesporazumom od prošle godine koji nikada nije razriješen.</p>
+<p>Sve to znate vi. I to znanje čini vas nezamjenjivima. AI može napisati pismo, ali vi odlučujete treba li ga uopće poslati. AI može predložiti temu za razgovor, ali vi osjećate kada je vrijeme za šutnju. Taj ljudski, pastoralni, duboko osobni sud jest srž vašeg rada, i nijedan algoritam ga ne može zamijeniti.</p>
+</section>
+<section id="nedostatak-aktualnih-informacija" class="level2">
+<h2 class="anchored" data-anchor-id="nedostatak-aktualnih-informacija">Nedostatak aktualnih informacija</h2>
+<p>Na besplatnoj razini korištenja, AI alati poput Claudea nemaju pristup internetu u stvarnom vremenu. To znači da ne znaju što se dogodilo jučer. Ne poznaju raspored misa u vašoj župi. Ne znaju tko je trenutni biskup. Ne znaju kakvo je vrijeme za vikend niti kakav je aktualni politički kontekst u Hrvatskoj.</p>
+<p>Ovo ograničenje je tehničke prirode i može se zaobići (neke plaćene verzije alata imaju pristup internetu), ali ga je važno imati na umu. Kada od AI-ja tražite činjenice koje se mijenjaju ili aktualne informacije, rezultat može biti zastario ili netočan. Koristite ga za generiranje teksta i ideja, a provjeravajte činjenice iz pouzdanih izvora.</p>
+</section>
+</section>
+<section id="slike-stvorene-umjetnom-inteligencijom-mogućnosti-i-granice" class="level1">
+<h1>Slike stvorene umjetnom inteligencijom: mogućnosti i granice</h1>
+<p>Osim rada s tekstom, noviji AI alati mogu stvarati slike iz tekstualnih opisa. Ova mogućnost relevantna je za župni rad jer mnoge župe nemaju pristup grafičkom dizajneru, a vizualna komunikacija na društvenim mrežama postaje sve važnija.</p>
+<p>Alati poput Microsoft Copilota (besplatan, dostupan putem web preglednika) ili ChatGPT-a (s ugrađenim DALL-E generatorom slika) omogućuju da opišete sliku riječima i dobijete vizualni rezultat. Na primjer, možete zatražiti “toplu ilustraciju u akvarelnom stilu koja prikazuje obitelj kako sjedi oko stola u župnoj dvorani, meka topla rasvjeta, prijateljska atmosfera” i dobit ćete sliku koja to prikazuje.</p>
+<p>Ovo može biti korisno za izradu vizuala za Facebook objave, pozadina za plakate (na koje zatim u Canvi ili PowerPointu dodajete vlastiti tekst), ilustracija za župni bilten ili vizualnih materijala za katehezu.</p>
+<p>Ograničenja su, međutim, značajna i važno ih je poznavati. AI često generira ruke s pogrešnim brojem prstiju, što je poznata slabost trenutne generacije modela. Tekst unutar slike gotovo je uvijek nečitljiv ili iskrivljen, stoga nikada ne tražite od AI-ja da u sliku ugradi natpise (umjesto toga generirajte sliku bez teksta i tekst dodajte sami). Fotorealistični stil češće proizvodi neprirodne rezultate nego ilustrativni ili akvarelan stil. I, kao i kod teksta, svaku generiranu sliku trebate vizualno pregledati prije uporabe.</p>
+<p>Praktičan pristup je sljedeći: koristite generiranje slika kada je alternativa “nemamo nikakvu sliku,” a ne kada je alternativa “mogli bismo angažirati dizajnera.” AI slike su dobre za svakodnevnu komunikaciju na mrežama, ne za službene materijale ili situacije koje zahtijevaju profesionalnu kvalitetu.</p>
+</section>
+<section id="etika-i-odgovornost-koristiti-ai-u-skladu-s-vrednotama-koje-živite" class="level1">
+<h1>Etika i odgovornost: koristiti AI u skladu s vrednotama koje živite</h1>
+<p>Etička dimenzija korištenja AI-ja u crkvenom kontekstu zaslužuje promišljanje koje nadilazi uobičajene tehničke napomene o privatnosti i točnosti. Župa nije tvrtka. Njezina komunikacija nosi drukčiju težinu jer se obraća ljudima u trenucima vjere, ranjivosti i zajedništva.</p>
+<section id="privatnost-kao-konkretan-imperativ" class="level2">
+<h2 class="anchored" data-anchor-id="privatnost-kao-konkretan-imperativ">Privatnost kao konkretan imperativ</h2>
+<p>Najhitnija etička obveza tiče se zaštite osobnih podataka. AI alati su softver koji pohranjuje i obrađuje unose korisnika. Kada u Claude upišete nečije ime, adresu, zdravstveno stanje ili obiteljsku situaciju, taj podatak napušta vaše računalo i odlazi na server tvrtke koja upravlja alatom. Čak i ako ta tvrtka ima stroge politike privatnosti, podaci župljana nikada ne bi smjeli biti predmet ovakve obrade.</p>
+<p>Pravilo je jednostavno i bez iznimki: u AI alate ne unosite nikakve osobne podatke župljana. Nikada. Ni ime, ni adresu, ni opis situacije iz koje bi se moglo prepoznati o kome je riječ. Ako trebate pomoć pri pisanju pisma za osobu u teškoj situaciji, opis mora biti potpuno anonimiziran. Napišite “osoba koja je nedavno izgubila supružnika,” a ne “gospođa Kovačević iz Dubečke 14 čiji je muž umro prošli mjesec.”</p>
+</section>
+<section id="transparentnost-bez-pretjerivanja" class="level2">
+<h2 class="anchored" data-anchor-id="transparentnost-bez-pretjerivanja">Transparentnost bez pretjerivanja</h2>
+<p>Pitanje transparentnosti o korištenju AI-ja ponekad izaziva nelagodu. Trebate li na svaki tekst staviti napomenu “napisano uz pomoć AI-ja”? Odgovor je ne. Ali trebate biti iskreni ako vas netko izravno pita.</p>
+<p>Korištenje AI-ja za pomoć pri pisanju nije etički problematično, kao što nije problematično koristiti pravopis, zamoliti kolegu da pogleda tekst ili koristiti predložak za pismo. AI je alat. Etički je relevantan način na koji ga koristite, a ne sama činjenica da ga koristite.</p>
+<p>Ono što bi bilo problematično jest prezentiranje AI-jem generiranog sadržaja kao ploda vlastitog dugog rada ili produbljena osobnog promišljanja kada to nije slučaj. Ako katehist podijeli duboku duhovnu refleksiju na susretu, sudionici prirodno pretpostavljaju da ta refleksija dolazi iz osobnog iskustva vjere. Ako je u potpunosti generirana AI-jem bez ikakve osobne prilagodbe, nešto se izgubilo u tom procesu, ne zato što je tekst nužno lošiji, nego zato što autentičnost i osobni trud imaju vlastitu vrijednost u pastoralnom kontekstu.</p>
+<p>Zdravi pristup leži u sredini: koristite AI kao polazište i pomoć, ali u svaki tekst unesite nešto vlastito. Pregledajte ga, prilagodite ga, dodajte ono što samo vi znate i osjećate. Tada tekst nije “napisao AI” niti “napisao ja,” nego je nastao u suradnji, kao što mnogi dobri tekstovi nastaju kroz razgovor, povratne informacije i zajedničko oblikovanje.</p>
+</section>
+<section id="osobni-susret-nije-zamjenjiv" class="level2">
+<h2 class="anchored" data-anchor-id="osobni-susret-nije-zamjenjiv">Osobni susret nije zamjenjiv</h2>
+<p>Ovo je etičko načelo koje je najvažnije od svih i istovremeno ono koje je najteže pretočiti u praktično pravilo jer je prije svega stav, a ne procedura.</p>
+<p>AI može pomoći da vaša komunikacija bude učinkovitija. Emailovi mogu biti jasniji, objave privlačnije, materijali bolje strukturirani. Ali svrha te učinkovitosti nije učinkovitost sama. Svrha je osloboditi vrijeme za ono što nijedan alat ne može zamijeniti: osobnu prisutnost.</p>
+<p>Ako AI pomogne da email napišete u dvije minute umjesto dvadeset, tih osamnaest ušteđenih minuta trebalo bi otići prema ljudima, a ne prema još više emailova. Prema posjetu, prema razgovoru, prema tome da stanete ispred crkve nakon mise i pitate nekoga kako je. U tom smislu, AI je dobar sluga ali loš gospodar. Ako vas tjera da provodite više vremena za ekranom umjesto manje, nešto je pošlo krivo.</p>
+</section>
+<section id="odgovornost-uvijek-leži-na-osobi" class="level2">
+<h2 class="anchored" data-anchor-id="odgovornost-uvijek-leži-na-osobi">Odgovornost uvijek leži na osobi</h2>
+<p>Konačno, načelo koje povezuje sve ostale: za svaki tekst, svaku sliku, svaku informaciju koja izlazi iz vaše župe, odgovornost snosi osoba koja ju je objavila, a ne alat koji je pomogao u njezinoj izradi. AI ne može biti izgovor za netočnost, neprikladnost ili nemarnost. Kada potpišete email, postavite objavu ili podijelite materijal, vi stojite iza tog sadržaja. Pregled i provjera nisu neobavezan korak, nego sastavni dio procesa.</p>
+</section>
+</section>
+<section id="stav-crkve-prema-tehnologiji-širi-kontekst" class="level1">
+<h1>Stav Crkve prema tehnologiji: širi kontekst</h1>
+<p>Razumjeti mjesto AI-ja u crkvenom radu lakše je kada se smjesti u širi kontekst odnosa Crkve prema tehnološkom napretku. Taj odnos nikada nije bio jednostavan, ali nikada nije bio ni jednoznačno negativan.</p>
+<p>Crkva je kroz povijest bila pokretač tehnoloških inovacija (tiskarski stroj revolucionirao je širenje vjere), ali i oprezna prema onima koje su prijetile ljudskom dostojanstvu. Papa Franjo nastavlja ovu tradiciju promišljene otvorenosti. U svojoj poruci za Svjetski dan mira 2024. ne odbacuje umjetnu inteligenciju, ali inzistira na tome da njezin razvoj mora biti vođen brigom za opće dobro, posebno za najranjivije. Upozorava na opasnost od “tehnokratske paradigme” u kojoj učinkovitost postaje jedina mjera vrijednosti, na štetu ljudskog dostojanstva i solidarnosti.</p>
+<p>Za župnog suradnika, ove se misli prevode u konkretan stav: koristite AI tamo gdje služi ljudima, a ne tamo gdje zamjenjuje ljude. Koristite ga da biste imali više vremena za pastoral, a ne da biste imali manje kontakta s vjernicima. Koristite ga s punom sviješću o tome da ste vi, a ne stroj, oni koji nose odgovornost i koji svjedoče vjeru.</p>
+</section>
+<section id="kako-početi-prvi-koraci-za-onoga-tko-nikada-nije-koristio-ai" class="level1">
+<h1>Kako početi: prvi koraci za onoga tko nikada nije koristio AI</h1>
+<p>Ako ste pročitali sve do ovdje i razmišljate “dobro, ali kako konkretno početi?”, evo najjednostavnijeg mogućeg puta.</p>
+<p>Otvorite web preglednik i posjetite claude.ai. Napravite besplatan račun koristeći svoju email adresu. Ne trebate ništa plaćati niti instalirati. Postupak traje manje od dvije minute.</p>
+<p>Kada se prijavite, pred vama će biti jednostavno sučelje s poljem za upis teksta. Tu tipkate svoju uputu. Za prvi pokušaj odaberite nešto konkretno iz vlastitog rada. Primjerice, uzmite tekst koji trebate napisati ovog tjedna (objavu, email, obavijest) i pokušajte ga zatražiti od Claudea koristeći UZKO okvir.</p>
+<p>Pogledajte rezultat. Neće biti savršen. Dajte povratnu informaciju unutar razgovora: zamolite ga da skrati, promijeni ton, doda informaciju ili prilagodi. Pokušajte dva do tri kruga usavršavanja. Rezultat nakon trećeg kruga gotovo će sigurno biti koristan kao polazište.</p>
+<p>Pregledajte tekst, ispravite što treba, dodajte osobni dodir i koristite ga. Čestitajte, upravo ste uštedjeli petnaest minuta. Ponovite sutra, i prekosutra, i do kraja tjedna imat ćete dovoljno iskustva da znate za koje vam je zadatke AI zaista koristan.</p>
+</section>
+<section id="zaključna-misao" class="level1">
+<h1>Zaključna misao</h1>
+<p>Tehnologija se mijenja brzo, ali neke stvari ostaju nepromijenjene. Župa postoji zato što su ljudi potrebni jedni drugima. Zato što vjera nije samo osobno uvjerenje nego zajednički život. Zato što netko mora otvoriti vrata crkve, upaliti svijeće, pozvati ljude, saslušati ih, pratiti ih i biti s njima u trenucima radosti i tuge.</p>
+<p>AI ne može ništa od toga. Ne može ni blizu toga. On je stroj koji generira tekst. Ali upravo zato može biti koristan: oslobađajući vas od dijela rutinskog pisanja, daje vam natrag ono najvrednije što imate, a to je vrijeme za ljude.</p>
+<p>Koristite ga mudro. Koristite ga s punom sviješću o tome što može i ne može. Koristite ga u službi poslanja koje obavljate. I ne zaboravite: tekst koji AI napiše u tri sekunde dobiva smisao tek kada ga stvarna osoba pročita, osjeti i na njega odgovori. Susret čovjeka s čovjekom i čovjeka s Bogom ne može se automatizirati. I to je, u konačnici, najbolja vijest od svega.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="razumjeti-ai-u-zupnom-radu_files/libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

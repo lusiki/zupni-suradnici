@@ -21,3 +21,8 @@ env/
 # Temporary files
 *.tmp
 *.bak
+
+# Quarto build artifacts
+*.log
+*.tex
+*_files/

@@ -22,26 +22,34 @@ Materijali za radionicu **"AI kao pomoćnik u župnom radu"** namijenjenu župni
 
 ## Sadržaj repozitorija
 
-```
-ai-u-zupnom-radu/
-├── README.md                              # Opis projekta (ovaj dokument)
-├── CLAUDE.md                              # Upute za izradu projekta
-├── prezentacija/
-│   └── ai-u-zupnom-radu.pptx             # PowerPoint prezentacija (21 slajd)
-└── tekst/
-    ├── ai-u-zupnom-radu-opis.md          # Stručni opis sadržaja radionice
-    └── vodic-za-voditelja.md             # Operativni vodič za voditelja
-```
-
 ### Prezentacija
 
-- **[ai-u-zupnom-radu.pptx](prezentacija/ai-u-zupnom-radu.pptx)** — PowerPoint prezentacija od 21 slajda koja služi kao vizualna pratnja radionici. Moderan dizajn u toplim tonovima, minimalan tekst, widescreen 16:9 format.
+Quarto reveal.js prezentacija od 21 slajda — vizualna pratnja radionici. Minimalan dizajn, Roboto tipografija, widescreen 16:9 format.
+
+| Datoteka | Opis |
+|----------|------|
+| [ai-u-zupnom-radu.qmd](prezentacija/ai-u-zupnom-radu.qmd) | Izvorni Quarto dokument |
+| [ai-u-zupnom-radu.html](prezentacija/ai-u-zupnom-radu.html) | Renderirana prezentacija (otvoriti u pregledniku) |
+| [custom-theme.scss](prezentacija/custom-theme.scss) | SCSS tema za prezentaciju |
 
 ### Tekstualni materijali
 
-- **[ai-u-zupnom-radu-opis.md](tekst/ai-u-zupnom-radu-opis.md)** — Cjelovit stručni opis radionice u formi članka. Obuhvaća teorijski okvir, metodologiju, sadržaj radionice i očekivane ishode. Pogodan za objavu, izvještaj ili dokumentaciju.
+**AI kao pomoćnik u župnom radu — stručni opis radionice**
+Cjelovit stručni opis radionice u formi članka. Obuhvaća teorijski okvir, metodologiju, sadržaj radionice i očekivane ishode. Pogodan za objavu, izvještaj ili dokumentaciju.
 
-- **[vodic-za-voditelja.md](tekst/vodic-za-voditelja.md)** — Detaljan operativni vodič za voditelja radionice. Prati prezentaciju slajd po slajd s uputama što reći, što pokazati i na što paziti. Uključuje pripremljene scenarije, primjere promptova i kontrolnu listu za pripremu.
+| Format | Link |
+|--------|------|
+| HTML | [ai-u-zupnom-radu-opis.html](tekst/ai-u-zupnom-radu-opis.html) |
+| Quarto izvor | [ai-u-zupnom-radu-opis.qmd](tekst/ai-u-zupnom-radu-opis.qmd) |
+
+**Razumjeti umjetnu inteligenciju u službi župnog rada — vodič za župne suradnike**
+Cjelovit vodič koji župnim suradnicima objašnjava što je AI, kako ga koristiti, UZKO okvir za pisanje promptova, praktične primjere iz župnog rada, etičku dimenziju i generiranje slika.
+
+| Format | Link |
+|--------|------|
+| HTML | [razumjeti-ai-u-zupnom-radu.html](tekst/razumjeti-ai-u-zupnom-radu.html) |
+| PDF | [razumjeti-ai-u-zupnom-radu.pdf](tekst/razumjeti-ai-u-zupnom-radu.pdf) |
+| Quarto izvor | [razumjeti-ai-u-zupnom-radu.qmd](tekst/razumjeti-ai-u-zupnom-radu.qmd) |
 
 ## Alati korišteni na radionici
 
