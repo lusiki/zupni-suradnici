@@ -28,8 +28,8 @@ Quarto reveal.js prezentacija od 21 slajda — vizualna pratnja radionici. Minim
 
 | Datoteka | Opis |
 |----------|------|
+| [**Otvori prezentaciju**](https://lusiki.github.io/zupni-suradnici/prezentacija/ai-u-zupnom-radu.html) | Renderirana prezentacija u pregledniku |
 | [ai-u-zupnom-radu.qmd](prezentacija/ai-u-zupnom-radu.qmd) | Izvorni Quarto dokument |
-| [ai-u-zupnom-radu.html](prezentacija/ai-u-zupnom-radu.html) | Renderirana prezentacija (otvoriti u pregledniku) |
 | [custom-theme.scss](prezentacija/custom-theme.scss) | SCSS tema za prezentaciju |
 
 ### Tekstualni materijali
@@ -39,7 +39,7 @@ Cjelovit stručni opis radionice u formi članka. Obuhvaća teorijski okvir, met
 
 | Format | Link |
 |--------|------|
-| HTML | [ai-u-zupnom-radu-opis.html](tekst/ai-u-zupnom-radu-opis.html) |
+| HTML | [**Otvori u pregledniku**](https://lusiki.github.io/zupni-suradnici/tekst/ai-u-zupnom-radu-opis.html) |
 | Quarto izvor | [ai-u-zupnom-radu-opis.qmd](tekst/ai-u-zupnom-radu-opis.qmd) |
 
 **Razumjeti umjetnu inteligenciju u službi župnog rada — vodič za župne suradnike**
@@ -47,8 +47,8 @@ Cjelovit vodič koji župnim suradnicima objašnjava što je AI, kako ga koristi
 
 | Format | Link |
 |--------|------|
-| HTML | [razumjeti-ai-u-zupnom-radu.html](tekst/razumjeti-ai-u-zupnom-radu.html) |
-| PDF | [razumjeti-ai-u-zupnom-radu.pdf](tekst/razumjeti-ai-u-zupnom-radu.pdf) |
+| HTML | [**Otvori u pregledniku**](https://lusiki.github.io/zupni-suradnici/tekst/razumjeti-ai-u-zupnom-radu.html) |
+| PDF | [**Preuzmi PDF**](https://lusiki.github.io/zupni-suradnici/tekst/razumjeti-ai-u-zupnom-radu.pdf) |
 | Quarto izvor | [razumjeti-ai-u-zupnom-radu.qmd](tekst/razumjeti-ai-u-zupnom-radu.qmd) |
 
 ## Alati korišteni na radionici
