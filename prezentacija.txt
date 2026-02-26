@@ -1,0 +1,383 @@
+Here is the fully developed detailed outline with specific talking points, examples, transitions, and facilitator notes for every section.
+
+---
+
+BLOCK 1 UVOD I DEMISTIFIKACIJA (20 min)
+
+Slide 1 Naslovnica
+Title AI kao pomoćnik u župnom radu
+Subtitle Praktična radionica za župne suradnike
+Your name, date, Zagrebačka nadbiskupija
+
+Facilitator note As people settle in, have Claude open on the projected screen with a blank conversation ready. This creates curiosity immediately.
+
+---
+
+Slide 2 Što ćemo danas naučiti
+
+Four things they will walk away with
+
+Razumjeti što AI jest (i što nije) so they can form their own informed opinion rather than relying on media hype or fear.
+
+Naučiti razgovarati s AI alatom so they can get useful results instead of generic or wrong outputs.
+
+Isprobati AI na stvarnim župnim zadacima so the skill becomes real and not just theoretical.
+
+Vidjeti kako AI stvara slike so they know what is possible for visual communication.
+
+Facilitator talking point Set the tone early. Say something like Cilj ove radionice nije da postanete informatičari. Cilj je da nakon 90 minuta možete sjesti za računalo i dobiti konkretnu pomoć u poslu koji već radite. This relaxes people who might feel intimidated.
+
+---
+
+Slide 3 Počnimo s primjerom
+
+Do NOT start with definitions. Start with a live demo that creates an immediate emotional reaction of oh, this is actually useful for me.
+
+Prepared demo scenario Take a real (or realistic) parish bulletin text, something dry and overly formal that every parish produces. Paste it into Claude on screen and type something like
+
+Ovo je tekst iz župnog biltena. Možeš li ga prepisati tako da bude topliji, pristupačniji i kraći Ciljna publika su obitelji s djecom.
+
+Show the result. Then immediately do a second request in the same conversation
+
+Sada napiši verziju ovog teksta prilagođenu za Instagram objavu. Kratko, 2 do 3 rečenice, s pozivom na djelovanje.
+
+The audience sees two things at once AI can transform existing content quickly, and you can have a back and forth conversation with it.
+
+Facilitator talking point Pause after the demo and ask the group Koliko bi vam vremena trebalo da ovo napišete sami Let them react. This grounds the value proposition in their lived experience.
+
+Alternative demo if you want a stronger opening Ask the group to name a parish event coming up. Then write the prompt live with their input, improvising. This is riskier but much more engaging because the content is theirs. With under 15 people this works well.
+
+---
+
+Slide 4 Što je zapravo AI
+
+Now that curiosity is established, give just enough theory to build understanding without losing attention.
+
+Core explanation in three layers
+
+Layer 1 (what it is) AI alati poput Claudea su softver koji je treniran na ogromnoj količini teksta, knjiga, članaka, web stranica, razgovora. Iz toga je naučio obrasce u jeziku, kako rečenice funkcioniraju, kako se odgovara na pitanja, kako se piše u različitim stilovima.
+
+Layer 2 (what it does) Kada mu postavite pitanje ili date zadatak, on na temelju svega što je naučio predviđa koji bi tekst bio najkorisniji odgovor. To radi statistički, ne kroz razumijevanje.
+
+Layer 3 (what it is not) AI nema svijest, uvjerenja, osjećaje ni vjeru. Ne razmišlja. Ne moli se. Ne poznaje vašu župu. On je izuzetno sposoban alat za rad s tekstom, ali je samo alat.
+
+Analogy that works well for this audience Zamislite osobu koja je pročitala svaku knjigu u knjižnici, ali nikada nije izašla iz kuće. Zna sve o jeziku, ali nema životnog iskustva. Može napisati sjajnu propovijed, ali ne može osjetiti što vaša zajednica treba čuti.
+
+Facilitator note Someone will almost certainly ask ali može li AI zamijeniti svećenikakatehetunas Address this directly and warmly. The answer is no, and explain why parish work is fundamentally relational. AI can help you write the email, but it cannot visit the sick person. It can draft catechesis material, but it cannot see the confused look on a child's face and adjust. This framing positions AI as serving human ministry rather than threatening it.
+
+---
+
+Slide 5 Što AI radi dobro
+
+Go through each capability with a concrete parish example so it is never abstract
+
+Pisanje i prepisivanje tekstova You need a Facebook post about Advent wreath making, a formal letter to the diocese, a bulletin reflection. AI can draft all of these in seconds.
+
+Sažimanje dugih dokumenata You received a 20 page pastoral letter and need to summarize the key points for a parish council meeting. AI can condense it to one page.
+
+Prilagodba tona i stila You have a text written for adults but need a version for teenagers. Or you have an informal email that needs to become a formal letter. AI handles tone shifting very well.
+
+Brainstorming i ideje You are stuck planning a youth group activity or a parish Lenten program. AI can generate 10 ideas in seconds that you then filter and adapt.
+
+Prijevod i jezična pomoć Need to translate a parish announcement into English for foreign parishioners Need to check if your Croatian text sounds natural AI can help.
+
+Strukturiranje misli You have scattered notes from a meeting and need them turned into an organized summary or action list.
+
+Facilitator talking point Emphasize that AI is strongest precisely where people tend to lose the most time, staring at a blank page trying to start writing. AI eliminates the blank page problem.
+
+---
+
+Slide 6 Što AI ne radi dobro
+
+This is equally important and builds trust with an audience that may be skeptical.
+
+Činjenična točnost AI sometimes invents facts with complete confidence. It might cite an encyclical that does not exist, attribute a quote to the wrong saint, or give you a wrong date for a feast day. Illustrate this live if you want ask Claude something very specific like Što je papa Benedikt XVI rekao o umjetnoj inteligenciji u enciklici Caritas in Veritate and show how the answer may contain fabricated details mixed with real ones. This is powerful because the audience can feel the danger.
+
+Teološka preciznost AI has absorbed a lot of religious text but does not understand Catholic theology the way a trained catechist or theologian does. It might blend Protestant and Catholic perspectives, use imprecise sacramental language, or present a theological opinion as settled doctrine. Anything touching on faith content must be reviewed by someone with theological knowledge.
+
+Pastoralni sud AI cannot know that Marija just lost her husband and that the standard form letter would feel cold. It cannot sense the mood of a meeting. It cannot decide whether a parish conflict needs directness or gentleness. Human judgment is irreplaceable here.
+
+Aktualne informacije On the free tier, Claude does not browse the internet. It does not know what happened yesterday. It does not know your parish schedule, your bishop's latest letter, or what the weather is this Sunday. Do not ask it for current facts.
+
+Matematika i precizni izračuni If you need to calculate a parish budget, use a spreadsheet, not AI.
+
+Facilitator talking point Frame this positively. These limitations are not reasons to avoid AI, they are reasons to use it wisely. The person using AI is like an editor working with a talented but unreliable writer. The writer produces drafts quickly, but the editor must always check the work.
+
+---
+
+Slide 7 Etička dimenzija
+
+This audience will care deeply about this. Give it the weight it deserves.
+
+Point 1, Vatikan i AI Pope Francis dedicated his 2024 World Day of Peace message to AI under the title Artificial Intelligence and Peace. The core message is that AI is not inherently good or bad, it depends on how humans use it. Technology must serve the common good and human dignity. Mentioning this shows that the Church is engaged with this topic, not ignoring it or condemning it.
+
+Point 2, Privatnost podataka This is the most practical ethical point. Do not paste personal information about parishioners into AI tools. No names, addresses, phone numbers, health details, family situations. If you want to draft a pastoral letter to someone in a difficult situation, anonymize it completely. Write Napiši pismo utjehe osobi koja je izgubila supružnika not Napiši pismo za Mariju Horvat iz Dubrave koja...
+
+Point 3, Transparentnost If you use AI to help write something, you do not need to put a disclaimer on every parish bulletin, but be honest if someone asks. There is nothing wrong with saying koristio sam AI kao pomoć pri pisanju. This is no different than using spell check or asking a colleague to proofread.
+
+Point 4, Ne zamjenjujemo osobni susret AI can help you communicate more efficiently, but it must never become a substitute for actual human presence. The email it helps you write should lead to a real conversation, a real visit, a real community moment.
+
+Facilitator note Keep this section conversational, not preachy. The audience likely shares these values already. You are affirming their instincts, not lecturing.
+
+Transition to Block 2 Sada kada znamo što AI može i ne može, naučimo kako izvući ono najbolje iz njega.
+
+---
+
+BLOCK 2 KAKO PISATI DOBRE PROMPTOVE (15 min)
+
+Slide 8 Što je prompt
+
+Simple definition Prompt je uputa koju tipkate u AI alat. To je vaš način komunikacije s njim. Kao što biste kolegi objasnili što trebate, tako objašnjavate i AI-ju, samo preciznije.
+
+Key insight to communicate Most people type one vague sentence and then conclude AI is not useful when the result is generic. The problem is almost never the AI, it is the instruction. A good prompt turns a mediocre tool into an excellent assistant.
+
+Facilitator talking point Zamislite da zovete novog volontera i kažete mu samo 'napravi nešto za nedjelju.' Što će napraviti Ne znate. Ali ako kažete 'pripremi 30 stolica u dvorani, postavi projektor i ispiši popis pjesama za misu u 10 sati,' dobit ćete točno ono što vam treba. AI funkcionira isto.
+
+---
+
+Slide 9 Okvir za dobar prompt
+
+Present the four element framework with a memorable Croatian acronym or visual. Consider using the word UZKO (Uloga, Zadatak, Kontekst, Oblik) since it is easy to remember.
+
+U kao ULOGA (who is the AI in this conversation)
+Tell the AI what perspective to take. This shapes the vocabulary, tone, and type of content it produces.
+Examples
+Ti si iskusan komunikator u rimokatoličkoj župi.
+Ti si kateheta koji priprema sadržaj za djecu od 8 do 10 godina.
+Ti si tajnik župe koji piše službenu korespondenciju.
+
+Why this matters Without a role, AI defaults to a generic assistant voice. With a role, it adapts its language and approach. The difference is significant.
+
+Z kao ZADATAK (what exactly you need)
+Be specific about the output. Not napiši nešto but exactly what kind of text, for what purpose.
+Examples
+Napiši objavu za Facebook stranicu župe.
+Sažmi ovaj tekst u 5 ključnih točaka.
+Predloži 5 tema za korizmeni program za mlade.
+
+K kao KONTEKST (the relevant background information)
+Give the AI the details it needs to produce something relevant rather than generic. Who is the audience, what is the occasion, what are the specifics.
+Examples
+Događaj je večer za bračne parove povodom blagdana sv. Valentina. Očekujemo 30 parova. Program uključuje predavanje i zajedničku večeru.
+Župa je u manjem mjestu, zajednica je starija, ton treba biti topao i jednostavan.
+
+O kao OBLIK (the format, tone, length, style)
+Tell the AI how the output should look and feel.
+Examples
+Topao i pozivajući ton, 3 do 5 rečenica.
+Formalan ton prikladan za dopisivanje s biskupijskim uredom, jedna stranica.
+Jednostavan jezik razumljiv djeci, s jednom kratkom molitvom na kraju.
+
+Facilitator note Put this framework on a physical handout or leave it projected throughout Block 3 so participants can reference it while working.
+
+---
+
+Slide 10 Loš prompt vs dobar prompt
+
+This is the most important slide in the entire presentation. Do it live with Claude on screen.
+
+First, the weak prompt
+Type into Claude Napiši nešto o misi.
+
+Show the result. It will be generic, vague, probably too long, and not useful for any specific purpose. Do not mock it, just note that it is fine but not helpful for actual parish work.
+
+Then, the strong prompt
+Type into Claude Ti si komunikator rimokatoličke župe sv. Josipa u Zagrebu. Napiši kratku Facebook objavu (3 do 4 rečenice) koja poziva vjernike na svečanu misu povodom blagdana sv. Josipa u srijedu 19. ožujka u 18 sati u župnoj crkvi. Ton neka bude topao i radostan. Na kraju uključi praktičnu informaciju da je nakon mise predviđeno druženje uz kavu u župnoj dvorani.
+
+Show the result. The contrast will be dramatic and the audience will immediately see why specificity matters.
+
+Facilitator talking point Vidite razliku AI nije pametniji u drugom slučaju. Vi ste bili pametniji u načinu na koji ste ga pitali.
+
+---
+
+Slide 11 Dodatni savjeti za rad s AI-jem
+
+These are the tips that turn a beginner into a competent user. Go through each with a quick example.
+
+Razgovarajte, ne šaljite jednu poruku. AI remembers the conversation. After the first result you can say skrati ovo na pola or promijeni ton u svečaniji or dodaj citat iz Svetog pisma. Show a quick example of this iterative refinement live.
+
+Dajte mu svoj tekst da poboljša. You do not always need to start from zero. Paste your own draft and say poboljšaj ovaj tekst, zadrži moje ključne poruke ali učini ga čitljivijim. This is often faster and the result is closer to your own voice.
+
+Tražite više verzija. Type daj mi 3 različite verzije ovog teksta and then pick the one you like best or combine elements from different versions.
+
+Zadajte mu format izričito. If you want bullet points, say so. If you want a table, say so. If you want a subject line for an email, say so. AI follows formatting instructions well but does not guess what you want.
+
+Ako nešto ne valja, recite mu. You can say ovo je previše formalno or ovo zvuči kao da piše robot, napiši prirodnije or nedostaje informacija o datumu. AI takes feedback within the conversation and adjusts.
+
+Koristite AI za stvari za koje nemate vremena, ne za stvari koje volite raditi. If you enjoy writing reflections for the bulletin, keep doing it yourself. Use AI for the things that drain your time without energizing you, like drafting routine emails or reformatting announcements for different channels.
+
+Transition to Block 3 Dosta teorije. Vrijeme je da sami isprobate.
+
+---
+
+BLOCK 3 PRAKTIČNA RADIONICA (35 min)
+
+Slide 12 Upute za rad
+
+Logistics setup (say this out loud, do not just show it on screen)
+
+Tko ima mobitel ili laptop, neka otvori claude.ai. Tko nema uređaj, neka sjedne pokraj nekoga tko ima i radite zajedno. Nije problem, čak je i bolje jer ćete si međusobno pomagati.
+
+Prvu vježbu radimo zajedno korak po korak. Ja ću tipkati na ekranu, vi na svojim uređajima. Nakon toga radite samostalnije.
+
+Ako zapnete, podignite ruku. Dolazim do vas.
+
+Nemojte se brinuti ako rezultat nije savršen iz prvog pokušaja. Poanta je naučiti proces, ne dobiti savršen tekst.
+
+Project the UZKO framework on screen or distribute the handout now so they have it as a reference.
+
+---
+
+Slide 13 Vježba 1 — Objava za društvene mreže (guided, 12 min)
+
+Task Write a Facebook or Instagram post inviting parishioners to an event.
+
+Step by step facilitation
+
+Minute 1 to 2 Ask the group to pick a real event from one of their parishes, or use a prepared example (Advent wreath making workshop, parish charity dinner, children's Bible camp). Write it on the board or say it out loud so everyone works with the same scenario.
+
+Minute 3 to 5 Build the prompt together on screen. Walk through each element of UZKO out loud. Koja je uloga Komunikator župe. Koji je zadatak Facebook objava. Koji je kontekst Let them fill in the details. Type it all into Claude together.
+
+Minute 5 to 6 Show the result. Read it out loud. Ask the group what they think. Is it good Too long Wrong tone Missing something
+
+Minute 6 to 8 Refine it live. Ask Claude to adjust based on the group's feedback. This demonstrates the iterative process.
+
+Minute 8 to 12 Now participants try it themselves with their own event. Those who do not have a real event can use a second prepared scenario you provide (example poziv na križni put petkom u korizmi u 18 sati, nakon čega slijedi skromna večera u župnoj dvorani).
+
+Circulate and look at what people are typing. Common mistakes at this stage prompts that are too short, forgetting to specify tone or length, writing in English because they think AI works better that way (reassure them Croatian works well).
+
+---
+
+Slide 14 Vježba 2 — Službeni email ili pismo (semi independent, 12 min)
+
+Task Draft a formal or semi formal email or letter. Participants choose from one of these scenarios
+
+Option A Zahvalnica volonterima koji su pomogli organizirati župni sajam. The letter should express genuine gratitude, mention specific contributions if possible, and invite them to continue volunteering.
+
+Option B Poziv na sastanak župnog pastoralnog vijeća. Include the date, time, location, agenda topics, and a polite request to confirm attendance.
+
+Option C Obavijest o promjeni rasporeda misa tijekom ljetnih mjeseci. The email needs to clearly communicate which masses change, the new times, the period this covers, and where to find more information.
+
+Facilitator notes for this exercise
+
+Give them 1 to 2 minutes to read the options and choose. Then let them write their prompt and send it. Do not over-guide, let them try applying UZKO on their own.
+
+After about 5 minutes, pause and ask one or two people to share what they got. Show one example on screen if someone volunteers. Use this as a teaching moment point out what they did well in the prompt and what could be improved.
+
+Then give them the remaining time to refine their result or try a second option if they finished quickly.
+
+Watch for participants who are shy about typing or who seem stuck. Walk over and help them formulate their first sentence. Often the hardest part is just starting.
+
+---
+
+Slide 15 Vježba 3 — Odaberite svoj izazov (independent, 11 min)
+
+Task Choose something relevant to your actual work. This is where the workshop becomes personally valuable because everyone works on something real.
+
+Menu of options (project these on screen)
+
+1. Sažetak dokumenta Paste a passage from a church document, pastoral letter, or encyclical and ask Claude to summarize it in simpler language suitable for reading at a parish council meeting.
+
+2. Priprema za katehezu Ask Claude to create 3 discussion questions for a Bible study group based on next Sunday's Gospel reading. Or ask it to outline a 30 minute catechesis session on a specific topic (for example, the sacrament of Reconciliation for children preparing for first confession).
+
+3. Razmišljanje za bilten Ask Claude to write a short spiritual reflection (8 to 10 sentences) for the parish bulletin on a given theme, such as Advent hope or the meaning of the parish patron saint's feast day. Then review it and adjust the theology yourself.
+
+4. Ideje za aktivnosti Ask Claude to brainstorm 5 to 7 ideas for a specific parish need, such as a youth group Lenten project, a way to welcome new parishioners, or activities for a parish family day.
+
+5. Prepisivanje teksta za drugu publiku Take something you have already written (a homily summary, a catechesis handout, a parish announcement) and ask Claude to adapt it for a different audience, for example from adults to teenagers, or from Croatian to simple English for foreign parishioners.
+
+6. Slobodan izbor If none of the above fit, participants can bring their own challenge. Encourage this for anyone who already has a specific task they have been meaning to do.
+
+Facilitator notes This exercise has more variance so circulate actively. Some people will finish quickly, others will need help choosing. For fast finishers, suggest they try a second task or help their neighbor. For those who seem lost, suggest option 4 (brainstorming) as it is the most approachable.
+
+With about 2 minutes left, ask the group to wrap up and invite one or two people to share what they discovered. Often someone will have gotten a surprisingly good result that impresses the whole group.
+
+---
+
+BLOCK 4 GENERIRANJE SLIKA (10 min)
+
+Slide 16 AI može i stvarati slike
+
+Brief explanation Some AI tools can generate images from text descriptions. This is a newer capability and it is developing rapidly. It is useful for parish social media posts, simple event posters, bulletin illustrations, and any situation where you need a visual but do not have a designer.
+
+Which tools do this ChatGPT (through DALL-E), Microsoft Copilot (free, available at copilot.microsoft.com), Canva (has an AI image generator in the free plan). Note that Claude on the free tier does not generate images, which is why you will demonstrate with a different tool.
+
+When it is useful You need a generic illustration for a Facebook post about Advent, a background image for a parish event poster, a visual to accompany a catechesis theme.
+
+When it is not useful You need a photo of your actual church or your actual parishioners. You need precise text in the image (AI is bad at generating text within images). You need something that looks like an official photograph.
+
+---
+
+Slide 17 Demonstracija uživo
+
+Open Microsoft Copilot (or whichever tool you choose) and generate an image live.
+
+First prompt A warm watercolor illustration of people of different ages gathering around a table for a meal in a church parish hall. Soft warm lighting, friendly atmosphere, no text in the image.
+
+Show the result. React to it with the group. Note what is good and what is strange (AI often produces odd hands or unusual architectural details).
+
+Second prompt (adjusted based on first result) Modify based on what the group wants to see differently. Maybe make it more autumnal or add children or make it look more like a Croatian village.
+
+Third prompt (different use case) A simple elegant poster background for a Catholic parish Lenten retreat. Soft purple and gold tones, abstract, minimalist, no text. Show how this could serve as a background for a Canva poster where you add your own text.
+
+Facilitator talking point Ovo nije zamjena za profesionalnog dizajnera. Ali ako je alternativa 'nemamo nikakvu sliku,' onda je ovo odlična opcija. This framing is important because it sets realistic expectations.
+
+If time allows, ask the group to suggest a prompt. Type it in live and generate together. This is always a fun moment.
+
+---
+
+Slide 18 Ograničenja kod slika
+
+Quick honest overview
+
+Ruke i prsti AI often generates hands with extra or missing fingers. Always check.
+Tekst u slici AI is very bad at generating readable text within images. If you need text on a poster, generate the background image and add text yourself in Canva or PowerPoint.
+Lica Faces can look slightly unnatural. Illustrations and watercolor styles work better than photorealistic styles.
+Dosljednost If you generate an image you like and want another one in the same style, AI might produce something quite different. It is not perfectly controllable.
+Autorska prava AI generated images are generally free to use for non commercial purposes like parish communication, but this legal area is still evolving so be mindful for any high profile or commercial use.
+
+---
+
+BLOCK 5 ZAKLJUČAK (10 min)
+
+Slide 19 Tri stvari za zapamtiti
+
+Distill the entire workshop into three memorable takeaways
+
+AI je alat, vi ste stručnjak. AI can produce text in seconds but it does not know your parish, your people, or your mission. You bring the wisdom, judgment, and pastoral heart. AI brings speed and a first draft.
+
+Dobar prompt = dobar rezultat. Remember UZKO Uloga, Zadatak, Kontekst, Oblik. Take 30 seconds to write a good prompt and you will save 30 minutes of rewriting a bad result.
+
+Uvijek pregledajte, nikada ne šaljite bez provjere. Every AI output should be read, checked for accuracy, adjusted for your voice, and reviewed for theological soundness before it goes out to parishioners.
+
+---
+
+Slide 20 Vaši resursi
+
+Show a QR code or short URL that leads to a one page digital handout containing
+
+The UZKO framework with 2 to 3 example prompts for parish work
+A list of useful AI tools with links (Claude, ChatGPT, Copilot, Canva)
+3 to 5 ready made prompt templates they can copy and adapt (parish announcement, formal email, catechesis brainstorm, document summary, social media post)
+Your contact email for follow up questions
+Optionally a link to Pope Francis' 2024 World Day of Peace message for those who want to read the Vatican's perspective
+
+Facilitator talking point Ovo vam može služiti kao podsjetnik kada se vratite kući i sjednete za računalo. Ne trebate sve zapamtiti, samo otvorite ovaj list.
+
+---
+
+Slide 21 Pitanja i razmjena iskustava
+
+Open the floor. Suggested prompts for discussion if the group is quiet
+
+Što vas je najviše iznenadilo danas
+Što mislite, za koji biste zadatak u svojoj župi prvo koristili AI
+Imate li nedoumice ili pitanja o korištenju AI-ja u crkvenom kontekstu
+
+With a small group this usually sparks genuine conversation. Let it flow naturally. If someone raises a good concern, validate it. If someone shares an idea for use you had not thought of, celebrate it.
+
+End warmly Hvala vam na sudjelovanju i otvorenosti. AI je alat koji će se nastaviti razvijati, ali ono što se neće promijeniti je da vjera živi u osobnom susretu, u zajednici, u vašem svakodnevnom služenju. AI vam može pomoći da imate više vremena upravo za to.
+
+---
+
+That is the complete detailed outline. Want to adjust anything before we start building the actual PowerPoint and handout
