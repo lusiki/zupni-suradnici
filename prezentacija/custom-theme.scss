@@ -1,0 +1,463 @@
+/*-- scss:defaults --*/
+
+// Color palette
+$primary:       #1B3A5C;
+$secondary:     #FFFFFF;
+$accent:        #D4A843;
+$text-dark:     #2D2D2D;
+$bg-light:      #F5F5F5;
+$bg-warm:       #FBF8F3;
+$accent-soft:   #F0E6D0;
+$danger:        #C0392B;
+$success:       #27AE60;
+$muted:         #7F8C8D;
+
+// Typography
+$font-family-sans-serif: "Segoe UI", Calibri, "Helvetica Neue", Arial, sans-serif;
+$presentation-font-size-root: 36px;
+$presentation-heading-font: "Segoe UI", Calibri, "Helvetica Neue", Arial, sans-serif;
+$presentation-heading-color: $primary;
+$body-color: $text-dark;
+$link-color: $accent;
+
+// Headings
+$presentation-h1-font-size: 1.8em;
+$presentation-h2-font-size: 1.4em;
+$presentation-h3-font-size: 1.1em;
+
+$presentation-heading-font-weight: 700;
+
+// Slide
+$backgroundColor: $secondary;
+
+/*-- scss:rules --*/
+
+// ── Global ──
+.reveal {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+// ── Headings ──
+.reveal h1, .reveal h2 {
+  border-bottom: 3px solid $accent;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.6em;
+  letter-spacing: -0.01em;
+}
+
+.reveal h3 {
+  color: $primary;
+  font-weight: 600;
+  margin-bottom: 0.4em;
+}
+
+// ── Title slide ──
+.reveal .slide.title-slide,
+#title-slide {
+  background: linear-gradient(135deg, $primary 0%, darken($primary, 12%) 100%);
+  color: $secondary;
+  text-align: center;
+
+  h1 {
+    color: $secondary;
+    border-bottom: 3px solid $accent;
+    display: inline-block;
+    padding-bottom: 0.2em;
+    font-size: 2em;
+  }
+
+  .subtitle {
+    color: $accent;
+    font-size: 0.85em;
+    font-weight: 400;
+    margin-top: 0.3em;
+  }
+
+  .author, .date, .institute {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.55em;
+  }
+}
+
+// ── Section header slides ──
+.reveal .section-slide {
+  background: linear-gradient(135deg, $primary 0%, darken($primary, 10%) 100%);
+  color: $secondary;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    color: $secondary;
+    border-bottom-color: $accent;
+    font-size: 1.6em;
+  }
+
+  p {
+    color: rgba(255,255,255,0.85);
+    font-size: 0.7em;
+  }
+}
+
+// ── Card grid layout ──
+.card-grid {
+  display: grid;
+  gap: 0.5em;
+
+  &.cols-2 { grid-template-columns: 1fr 1fr; }
+  &.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+  &.cols-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+}
+
+.card {
+  background: $bg-light;
+  border-radius: 12px;
+  padding: 0.6em 0.8em;
+  border-left: 4px solid $accent;
+  font-size: 0.65em;
+  line-height: 1.4;
+  transition: transform 0.2s;
+
+  strong {
+    color: $primary;
+    display: block;
+    margin-bottom: 0.2em;
+    font-size: 1.05em;
+  }
+}
+
+.card-accent {
+  background: $accent-soft;
+  border-left-color: $primary;
+}
+
+.card-dark {
+  background: $primary;
+  color: $secondary;
+  border-left-color: $accent;
+
+  strong {
+    color: $accent;
+  }
+}
+
+// ── Number cards ──
+.num-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5em;
+  background: $bg-light;
+  border-radius: 12px;
+  padding: 0.5em 0.7em;
+  margin-bottom: 0.4em;
+  font-size: 0.62em;
+  line-height: 1.4;
+}
+
+.num {
+  background: $primary;
+  color: $accent;
+  font-weight: 800;
+  font-size: 1.4em;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+// ── Icon list ──
+.icon-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding: 0.25em 0;
+    font-size: 0.68em;
+    line-height: 1.4;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.4em;
+
+    &::before {
+      flex-shrink: 0;
+      font-size: 1.1em;
+      margin-top: 0.05em;
+    }
+  }
+}
+
+.icon-list.check li::before { content: "✓"; color: $success; font-weight: 700; }
+.icon-list.warn li::before  { content: "⚠"; color: $danger; }
+.icon-list.arrow li::before { content: "→"; color: $accent; font-weight: 700; }
+.icon-list.star li::before  { content: "★"; color: $accent; }
+.icon-list.dot li::before   { content: "●"; color: $primary; font-size: 0.6em; margin-top: 0.3em; }
+
+// ── Prompt comparison boxes ──
+.prompt-box {
+  border-radius: 12px;
+  padding: 0.6em 0.8em;
+  font-size: 0.58em;
+  line-height: 1.5;
+  margin-bottom: 0.4em;
+  font-family: "Segoe UI", Calibri, sans-serif;
+}
+
+.prompt-bad {
+  background: #FDEDEC;
+  border-left: 5px solid $danger;
+  color: #922B21;
+}
+
+.prompt-good {
+  background: #EAFAF1;
+  border-left: 5px solid $success;
+  color: #1E8449;
+}
+
+.prompt-label {
+  font-weight: 700;
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+  display: block;
+}
+
+// ── Demo box ──
+.demo-box {
+  background: linear-gradient(135deg, $primary, darken($primary, 8%));
+  color: $secondary;
+  border-radius: 14px;
+  padding: 0.7em 1em;
+  text-align: center;
+  font-size: 0.7em;
+  margin: 0.3em 0;
+
+  .demo-label {
+    color: $accent;
+    font-weight: 700;
+    font-size: 1.3em;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.3em;
+  }
+
+  p {
+    color: rgba(255,255,255,0.85);
+    margin: 0.2em 0;
+  }
+}
+
+// ── Analogy / highlight box ──
+.highlight-box {
+  background: $accent-soft;
+  border-left: 5px solid $accent;
+  border-radius: 0 12px 12px 0;
+  padding: 0.5em 0.8em;
+  font-size: 0.62em;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 0.4em 0;
+  color: $text-dark;
+}
+
+.highlight-box strong {
+  color: $primary;
+  font-style: normal;
+}
+
+// ── UZKO framework ──
+.uzko-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.45em;
+}
+
+.uzko-card {
+  border-radius: 12px;
+  padding: 0.45em 0.65em;
+  font-size: 0.55em;
+  line-height: 1.4;
+
+  .uzko-letter {
+    font-size: 2em;
+    font-weight: 800;
+    margin-right: 0.15em;
+    float: left;
+    line-height: 1;
+  }
+
+  .uzko-title {
+    font-weight: 700;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 0.15em;
+  }
+
+  .uzko-example {
+    font-style: italic;
+    opacity: 0.85;
+    font-size: 0.9em;
+    margin-top: 0.2em;
+  }
+}
+
+.uzko-u {
+  background: #E8EEF4;
+  border-left: 4px solid $primary;
+  .uzko-letter { color: $primary; }
+}
+
+.uzko-z {
+  background: #FDF2E0;
+  border-left: 4px solid $accent;
+  .uzko-letter { color: $accent; }
+}
+
+.uzko-k {
+  background: #EAFAF1;
+  border-left: 4px solid $success;
+  .uzko-letter { color: $success; }
+}
+
+.uzko-o {
+  background: #F5EEF8;
+  border-left: 4px solid #8E44AD;
+  .uzko-letter { color: #8E44AD; }
+}
+
+// ── Takeaway cards ──
+.takeaway {
+  background: linear-gradient(135deg, $primary, darken($primary, 8%));
+  color: $secondary;
+  border-radius: 14px;
+  padding: 0.55em 0.8em;
+  margin-bottom: 0.4em;
+  font-size: 0.6em;
+  line-height: 1.4;
+
+  .takeaway-num {
+    color: $accent;
+    font-size: 1.8em;
+    font-weight: 800;
+    float: left;
+    margin-right: 0.3em;
+    line-height: 1;
+  }
+
+  strong {
+    color: $accent;
+  }
+}
+
+// ── Two column comparison ──
+.compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6em;
+}
+
+// ── Resource list ──
+.resource-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    background: $bg-light;
+    border-radius: 10px;
+    padding: 0.35em 0.7em;
+    margin-bottom: 0.3em;
+    font-size: 0.6em;
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    border-left: 4px solid $accent;
+
+    strong {
+      color: $primary;
+    }
+
+    code {
+      color: $muted;
+      font-size: 0.85em;
+      background: none;
+    }
+  }
+}
+
+// ── Slide footer ──
+.reveal .slide-number {
+  color: $muted;
+  font-size: 0.45em;
+}
+
+// ── Smaller text utility ──
+.small { font-size: 0.75em; }
+.smaller { font-size: 0.6em; }
+.muted { color: $muted; }
+.accent { color: $accent; }
+.primary { color: $primary; }
+.text-center { text-align: center; }
+
+// ── Fragments ──
+.reveal .fragment.highlight-current-blue.current-fragment {
+  color: $primary;
+}
+
+// ── Final slide ──
+.final-slide {
+  text-align: center;
+
+  h2 {
+    border-bottom-color: $accent;
+    display: inline-block;
+  }
+}
+
+// ── Override bullet list ──
+.reveal ul {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    padding-left: 1.2em;
+    position: relative;
+    margin-bottom: 0.3em;
+
+    &::before {
+      content: "▸";
+      color: $accent;
+      font-weight: 700;
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+// Restore normal style for custom lists
+.reveal .icon-list li,
+.reveal .resource-list li {
+  padding-left: 0;
+  &::before {
+    position: static;
+  }
+}
+
+// ── Exercise slide styling ──
+.exercise-header {
+  background: $accent;
+  color: $primary;
+  font-weight: 700;
+  display: inline-block;
+  padding: 0.15em 0.6em;
+  border-radius: 8px;
+  font-size: 0.6em;
+  margin-bottom: 0.3em;
+}
