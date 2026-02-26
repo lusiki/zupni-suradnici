@@ -8,8 +8,8 @@ format:
   revealjs:
     theme: [default, custom-theme.scss]
     slide-number: true
-    transition: slide
-    transition-speed: default
+    transition: fade
+    transition-speed: fast
     width: 1280
     height: 720
     center: false
@@ -25,14 +25,14 @@ format:
     embed-resources: true
     lang: hr
 title-slide-attributes:
-  data-background-gradient: "linear-gradient(135deg, #1B3A5C 0%, #0F2440 100%)"
+  data-background-color: "#1a1a2e"
 ---
 
 ## Što ćemo danas naučiti {.smaller}
 
 <div class="num-card">
 <div class="num">1</div>
-<div><strong>Razumjeti što AI jest (i što nije)</strong><br>Formirati vlastiti informirani stav umjesto oslanjanja na medijske senzacije ili strahove.</div>
+<div><strong>Razumjeti što AI jest i što nije</strong><br>Formirati vlastiti informirani stav umjesto oslanjanja na medijske senzacije ili strahove.</div>
 </div>
 
 <div class="num-card">
@@ -58,7 +58,7 @@ Cilj ove radionice nije da postanete informatičari. Cilj je da nakon 90 minuta 
 ## Počnimo s primjerom {.smaller}
 
 <div class="demo-box">
-<div class="demo-label">⎕ DEMONSTRACIJA UŽIVO</div>
+<div class="demo-label">Demonstracija uživo</div>
 <p>Prebacujemo se na Claude — pogledajmo što AI može učiniti s tekstom iz župnog biltena.</p>
 </div>
 
@@ -85,15 +85,15 @@ Sada napiši verziju ovog teksta prilagođenu za Instagram objavu. Kratko, 2 do 
 
 <div class="card-grid cols-3">
 <div class="card">
-<strong>🔤 Treniran na tekstu</strong>
+<strong>Treniran na tekstu</strong>
 AI alati poput Claudea su softver treniran na ogromnoj količini teksta — knjiga, članaka, web stranica, razgovora. Iz toga je naučio obrasce u jeziku.
 </div>
 <div class="card">
-<strong>🎯 Predviđa odgovor</strong>
+<strong>Predviđa odgovor</strong>
 Kada mu postavite pitanje, on na temelju svega što je naučio predviđa koji bi tekst bio najkorisniji odgovor. To radi statistički, ne kroz razumijevanje.
 </div>
 <div class="card">
-<strong>🚫 Nema svijest</strong>
+<strong>Nema svijest</strong>
 AI nema svijest, uvjerenja, osjećaje ni vjeru. Ne razmišlja. Ne moli se. Ne poznaje vašu župu. On je izuzetno sposoban alat, ali je samo alat.
 </div>
 </div>
@@ -109,64 +109,64 @@ AI nema svijest, uvjerenja, osjećaje ni vjeru. Ne razmišlja. Ne moli se. Ne po
 
 <div class="card-grid cols-2">
 <div class="card">
-<strong>✏️ Pisanje i prepisivanje tekstova</strong>
+<strong>Pisanje i prepisivanje tekstova</strong>
 Facebook objava o Adventu, službeno pismo biskupiji, refleksija za bilten — AI može napisati nacrt u sekundama.
 </div>
 <div class="card">
-<strong>📄 Sažimanje dugih dokumenata</strong>
+<strong>Sažimanje dugih dokumenata</strong>
 Pastirsko pismo od 20 stranica? AI ga može sažeti na jednu stranicu za sastanak pastoralnog vijeća.
 </div>
 <div class="card">
-<strong>🎨 Prilagodba tona i stila</strong>
+<strong>Prilagodba tona i stila</strong>
 Tekst za odrasle treba prilagoditi za mlade? Neformalni email pretvoriti u službeno pismo? AI to radi izvrsno.
 </div>
 <div class="card">
-<strong>💡 Brainstorming i ideje</strong>
+<strong>Brainstorming i ideje</strong>
 Ideje za korizmeni program, aktivnosti za mlade, teme za predavanja — AI može generirati 10 prijedloga u sekundama.
 </div>
 <div class="card">
-<strong>🌍 Prijevod i jezična pomoć</strong>
+<strong>Prijevod i jezična pomoć</strong>
 Prijevod župne obavijesti na engleski za strane župljane ili provjera zvuči li tekst prirodno.
 </div>
 <div class="card">
-<strong>🗂️ Strukturiranje misli</strong>
+<strong>Strukturiranje misli</strong>
 Raspršene bilješke sa sastanka pretvoriti u organizirani sažetak ili listu zadataka.
 </div>
 </div>
 
 ::: {.highlight-box}
-AI je najsnažniji upravo tamo gdje ljudi gube najviše vremena — **pred praznom stranicom**. AI eliminira problem prazne stranice.
+AI je najsnažniji upravo tamo gdje ljudi gube najviše vremena — **pred praznom stranicom**.
 :::
 
 
 ## Što AI ne radi dobro {.smaller}
 
 <div class="card-grid cols-2">
-<div class="card" style="border-left-color: #C0392B;">
-<strong>❌ Činjenična točnost</strong>
+<div class="card" style="border-left: 2px solid #b44;">
+<strong>Činjenična točnost</strong>
 AI ponekad izmišlja činjenice s punim uvjerenjem — može citirati encikliku koja ne postoji ili pripisati citat krivom svecu.
 </div>
-<div class="card" style="border-left-color: #C0392B;">
-<strong>❌ Teološka preciznost</strong>
+<div class="card" style="border-left: 2px solid #b44;">
+<strong>Teološka preciznost</strong>
 Može pomiješati katoličku i protestantsku perspektivu, koristiti nepreciznu sakramentalnu terminologiju ili prikazati teološko mišljenje kao utvrđenu doktrinu.
 </div>
-<div class="card" style="border-left-color: #C0392B;">
-<strong>❌ Pastoralni sud</strong>
+<div class="card" style="border-left: 2px solid #b44;">
+<strong>Pastoralni sud</strong>
 AI ne zna da je Marija upravo izgubila supruga i da bi standardno pismo bilo hladno. Ne može osjetiti atmosferu sastanka.
 </div>
-<div class="card" style="border-left-color: #C0392B;">
-<strong>❌ Aktualne informacije</strong>
+<div class="card" style="border-left: 2px solid #b44;">
+<strong>Aktualne informacije</strong>
 Besplatna verzija Claudea nema pristup internetu. Ne zna što se dogodilo jučer, ne poznaje raspored vaše župe.
 </div>
 </div>
 
-<div class="card" style="border-left-color: #C0392B; font-size: 0.65em; margin-top: 0.4em;">
-<strong>❌ Matematika i precizni izračuni</strong>
+<div class="card" style="border-left: 2px solid #b44; margin-top: 1px; font-size: 0.6em;">
+<strong>Matematika i precizni izračuni</strong>
 Za župni proračun koristite tablični kalkulator, ne AI.
 </div>
 
 ::: {.highlight-box}
-Ova ograničenja nisu razlog da izbjegavamo AI — nego razlog da ga **koristimo mudro**. Vi ste urednik koji radi s talentiranim, ali nepouzdanim piscem. Pisac brzo piše nacrte, ali urednik uvijek mora provjeriti rad.
+Ova ograničenja nisu razlog da izbjegavamo AI — nego razlog da ga **koristimo mudro**. Vi ste urednik koji radi s talentiranim, ali nepouzdanim piscem.
 :::
 
 
@@ -174,37 +174,29 @@ Ova ograničenja nisu razlog da izbjegavamo AI — nego razlog da ga **koristimo
 
 <div class="card-grid cols-2">
 <div class="card card-accent">
-<strong>🕊️ Vatikan i AI</strong>
-Papa Franjo posvetio je poruku za Svjetski dan mira 2024. upravo umjetnoj inteligenciji. Ključna poruka: AI nije sam po sebi dobar ni loš — ovisi o tome kako ga ljudi koriste. Tehnologija mora služiti općem dobru i ljudskom dostojanstvu.
+<strong>Vatikan i AI</strong>
+Papa Franjo posvetio je poruku za Svjetski dan mira 2024. upravo umjetnoj inteligenciji. Ključna poruka: AI nije sam po sebi dobar ni loš — ovisi o tome kako ga ljudi koriste.
 </div>
 <div class="card card-accent">
-<strong>🔒 Privatnost podataka</strong>
-Nikada ne unosite osobne podatke župljana u AI alate. Bez imena, adresa, zdravstvenih podataka. Umjesto "Napiši pismo za Mariju Horvat iz Dubrave" — "Napiši pismo utjehe osobi koja je izgubila supružnika."
+<strong>Privatnost podataka</strong>
+Nikada ne unosite osobne podatke župljana u AI alate. Bez imena, adresa, zdravstvenih podataka. Anonimizujte sve — "osoba koja je izgubila supružnika", ne "Marija Horvat iz Dubrave."
 </div>
 <div class="card card-accent">
-<strong>🤝 Transparentnost</strong>
+<strong>Transparentnost</strong>
 Budite iskreni o korištenju AI-ja. Nema ničeg lošeg u tome reći "koristio/la sam AI kao pomoć pri pisanju." To je kao korektor pravopisa ili pomoć kolege.
 </div>
 <div class="card card-accent">
-<strong>💛 Osobni susret</strong>
-AI vam pomaže komunicirati učinkovitije, ali nikada ne smije zamijeniti stvarnu ljudsku prisutnost. Email koji AI napiše treba voditi do pravog razgovora, posjeta, susreta u zajednici.
+<strong>Osobni susret</strong>
+AI vam pomaže komunicirati učinkovitije, ali nikada ne smije zamijeniti stvarnu ljudsku prisutnost. Email koji AI napiše treba voditi do pravog razgovora, posjeta, susreta.
 </div>
 </div>
 
 
 ---
 
-<!-- BLOCK 2 -->
+## Kako pisati dobre promptove {background-color="#1a1a2e" .section-slide}
 
-## Što je prompt {.smaller background-color="#1B3A5C" .section-slide}
-
-::: {.r-fit-text style="color: white;"}
-Blok 2: Kako pisati dobre promptove
-:::
-
-::: {style="color: rgba(255,255,255,0.7); font-size: 0.5em; margin-top: 0.5em;"}
 Sada kada znamo što AI može i ne može, naučimo kako izvući ono najbolje iz njega.
-:::
 
 
 ## Što je prompt {.smaller}
@@ -221,7 +213,7 @@ Kao što biste kolegi objasnili što trebate, tako objašnjavate i AI-ju — sam
 
 <br>
 
-<div class="card card-dark" style="text-align: center; font-size: 0.7em;">
+<div class="card card-dark" style="text-align: center; font-size: 0.62em;">
 <strong>Ključni uvid</strong>
 Većina ljudi upiše jednu nejasnu rečenicu pa zaključi da AI nije koristan. Problem gotovo nikada nije AI — problem je uputa. Dobar prompt pretvara prosječan alat u izvrsnog pomoćnika.
 </div>
@@ -232,7 +224,7 @@ Većina ljudi upiše jednu nejasnu rečenicu pa zaključi da AI nije koristan. P
 <div class="uzko-grid">
 <div class="uzko-card uzko-u">
 <span class="uzko-letter">U</span>
-<span class="uzko-title">ULOGA</span>
+<span class="uzko-title">Uloga</span>
 Tko je AI u ovom razgovoru?
 <div class="uzko-example">
 "Ti si iskusan komunikator u rimokatoličkoj župi."
@@ -240,7 +232,7 @@ Tko je AI u ovom razgovoru?
 </div>
 <div class="uzko-card uzko-z">
 <span class="uzko-letter">Z</span>
-<span class="uzko-title">ZADATAK</span>
+<span class="uzko-title">Zadatak</span>
 Što točno trebate?
 <div class="uzko-example">
 "Napiši objavu za Facebook stranicu župe."
@@ -248,7 +240,7 @@ Tko je AI u ovom razgovoru?
 </div>
 <div class="uzko-card uzko-k">
 <span class="uzko-letter">K</span>
-<span class="uzko-title">KONTEKST</span>
+<span class="uzko-title">Kontekst</span>
 Koji su relevantni detalji?
 <div class="uzko-example">
 "Večer za bračne parove, 30 parova, predavanje i večera."
@@ -256,7 +248,7 @@ Koji su relevantni detalji?
 </div>
 <div class="uzko-card uzko-o">
 <span class="uzko-letter">O</span>
-<span class="uzko-title">OBLIK</span>
+<span class="uzko-title">Oblik</span>
 Ton, duljina, stil?
 <div class="uzko-example">
 "Topao ton, 3 do 5 rečenica."
@@ -274,16 +266,16 @@ Ton, duljina, stil?
 <div class="compare">
 <div>
 <div class="prompt-box prompt-bad">
-<span class="prompt-label">❌ Loš prompt</span>
+<span class="prompt-label">Loš prompt</span>
 Napiši nešto o misi.
 </div>
-<div style="font-size: 0.55em; color: #7F8C8D; margin-top: 0.3em; padding: 0 0.5em;">
+<div style="font-size: 0.5em; color: #6b6b6b; margin-top: 0.3em; padding: 0 0.5em;">
 Rezultat: generičan, nejasan, predug tekst koji ne služi nikakvoj konkretnoj svrsi.
 </div>
 </div>
 <div>
 <div class="prompt-box prompt-good">
-<span class="prompt-label">✅ Dobar prompt (UZKO)</span>
+<span class="prompt-label">Dobar prompt (UZKO)</span>
 <strong>U:</strong> Ti si komunikator rimokatoličke župe sv. Josipa u Zagrebu.<br>
 <strong>Z:</strong> Napiši kratku Facebook objavu (3–4 rečenice) koja poziva vjernike na svečanu misu povodom blagdana sv. Josipa.<br>
 <strong>K:</strong> Misa je u srijedu 19. ožujka u 18 sati u župnoj crkvi. Nakon mise predviđeno je druženje uz kavu u župnoj dvorani.<br>
@@ -303,27 +295,27 @@ Rezultat: generičan, nejasan, predug tekst koji ne služi nikakvoj konkretnoj s
 
 <div class="card-grid cols-2">
 <div class="card">
-<strong>💬 Razgovarajte</strong>
+<strong>Razgovarajte</strong>
 Ne šaljite samo jednu poruku. Nakon prvog rezultata recite: "skrati ovo na pola" ili "promijeni ton u svečaniji" ili "dodaj citat iz Svetog pisma."
 </div>
 <div class="card">
-<strong>📝 Dajte mu svoj tekst</strong>
+<strong>Dajte mu svoj tekst</strong>
 Ne morate počinjati od nule. Zalijepite svoj nacrt i recite "poboljšaj ovaj tekst, zadrži moje ključne poruke."
 </div>
 <div class="card">
-<strong>🔄 Tražite više verzija</strong>
+<strong>Tražite više verzija</strong>
 Upišite "daj mi 3 različite verzije ovog teksta" pa odaberite najbolju ili kombinirajte elemente.
 </div>
 <div class="card">
-<strong>📐 Zadajte format</strong>
+<strong>Zadajte format</strong>
 Želite li natuknice, tablicu, naslov za email — recite to izričito. AI prati upute za format, ali ne pogađa što želite.
 </div>
 <div class="card">
-<strong>🔧 Dajte povratnu informaciju</strong>
+<strong>Dajte povratnu informaciju</strong>
 Recite "ovo je previše formalno" ili "ovo zvuči kao robot, napiši prirodnije" — AI se prilagođava unutar razgovora.
 </div>
 <div class="card">
-<strong>⏰ Koristite pametno</strong>
+<strong>Koristite pametno</strong>
 Koristite AI za stvari za koje nemate vremena, ne za stvari koje volite raditi. Ako uživate pisati refleksije, nastavite sami.
 </div>
 </div>
@@ -331,73 +323,61 @@ Koristite AI za stvari za koje nemate vremena, ne za stvari koje volite raditi. 
 
 ---
 
-<!-- BLOCK 3 -->
+## Praktična radionica {background-color="#1a1a2e" .section-slide}
 
-## Praktična radionica {.smaller background-color="#1B3A5C" .section-slide}
-
-::: {.r-fit-text style="color: white;"}
-Blok 3: Vrijeme je da sami isprobate
-:::
-
-::: {style="color: rgba(255,255,255,0.7); font-size: 0.5em; margin-top: 0.5em;"}
-Dosta teorije. Otvorite claude.ai i krenimo!
-:::
+Dosta teorije. Otvorite claude.ai i krenimo.
 
 
 ## Upute za praktični rad {.smaller}
 
 <div class="card-grid cols-2">
 <div class="card card-dark">
-<strong>💻 Otvorite claude.ai</strong>
+<strong>Otvorite claude.ai</strong>
 Tko ima mobitel ili laptop — otvorite Claude. Tko nema uređaj — sjednite pokraj kolege i radite zajedno.
 </div>
 <div class="card card-dark">
-<strong>👥 Zajedno korak po korak</strong>
+<strong>Zajedno korak po korak</strong>
 Prvu vježbu radimo zajedno. Ja tipkam na ekranu, vi na svojim uređajima. Nakon toga radite samostalnije.
 </div>
 <div class="card card-dark">
-<strong>🙋 Podignite ruku</strong>
+<strong>Podignite ruku</strong>
 Ako zapnete — podignite ruku. Dolazim do vas.
 </div>
 <div class="card card-dark">
-<strong>🎯 Proces, ne savršenstvo</strong>
+<strong>Proces, ne savršenstvo</strong>
 Ne brinite ako rezultat nije savršen iz prvog pokušaja. Poanta je naučiti proces.
 </div>
 </div>
 
-<br>
-
-<div class="card card-accent" style="text-align: center; font-size: 0.7em;">
-<strong>UZKO okvir ostaje na ekranu kao podsjetnik tijekom cijelog praktičnog rada.</strong>
-</div>
+::: {.highlight-box}
+**UZKO okvir** ostaje na ekranu kao podsjetnik tijekom cijelog praktičnog rada.
+:::
 
 
 ## Vježba 1 — Objava za društvene mreže {.smaller}
 
-<div class="exercise-header">VOĐENA VJEŽBA · 12 MINUTA</div>
+<div class="exercise-header">Vođena vježba · 12 minuta</div>
 
 **Zadatak:** Napišite Facebook ili Instagram objavu koja poziva župljane na događaj.
 
-<div class="card-grid cols-2" style="margin-top: 0.3em;">
+<div class="card-grid cols-2" style="margin-top: 0.4em;">
 <div class="card">
-<strong>Korak 1 (2 min)</strong>
+<strong>Korak 1 — 2 min</strong>
 Zajedno biramo događaj — iz vaše župe ili pripremljeni primjer.
 </div>
 <div class="card">
-<strong>Korak 2 (3 min)</strong>
+<strong>Korak 2 — 3 min</strong>
 Gradimo prompt zajedno koristeći UZKO. Koja je uloga? Zadatak? Kontekst? Oblik?
 </div>
 <div class="card">
-<strong>Korak 3 (2 min)</strong>
+<strong>Korak 3 — 2 min</strong>
 Pokrećemo prompt i čitamo rezultat. Što mislite? Predug? Krivi ton?
 </div>
 <div class="card">
-<strong>Korak 4 (5 min)</strong>
+<strong>Korak 4 — 5 min</strong>
 Usavršavamo rezultat, a zatim vi sami isprobajte s vlastitim događajem.
 </div>
 </div>
-
-<br>
 
 ::: {.highlight-box}
 **Pripremljeni scenarij:** Poziv na križni put petkom u korizmi u 18 sati, nakon čega slijedi skromna večera u župnoj dvorani.
@@ -406,11 +386,11 @@ Usavršavamo rezultat, a zatim vi sami isprobajte s vlastitim događajem.
 
 ## Vježba 2 — Službeni email ili pismo {.smaller}
 
-<div class="exercise-header">SAMOSTALNI RAD · 12 MINUTA</div>
+<div class="exercise-header">Samostalni rad · 12 minuta</div>
 
-**Zadatak:** Napišite službeni ili poluslužbeni email/pismo. Odaberite jednu opciju:
+**Zadatak:** Napišite službeni ili poluslužbeni email. Odaberite jednu opciju:
 
-<div class="card-grid cols-3" style="margin-top: 0.3em;">
+<div class="card-grid cols-3" style="margin-top: 0.4em;">
 <div class="card">
 <strong>A) Zahvalnica volonterima</strong>
 Zahvala volonterima koji su pomogli organizirati župni sajam. Iskrena zahvalnost, konkretni doprinosi, poziv na daljnje volontiranje.
@@ -425,16 +405,14 @@ Obavijest o promjeni rasporeda misa tijekom ljetnih mjeseci. Jasno komunicirati 
 </div>
 </div>
 
-<br>
-
-<div class="card card-accent" style="font-size: 0.6em;">
-<strong>Savjet:</strong> Primijenite UZKO okvir samostalno. Nakon 5 minuta podijelimo primjere.
-</div>
+::: {.highlight-box}
+**Savjet:** Primijenite UZKO okvir samostalno. Nakon 5 minuta podijelimo primjere.
+:::
 
 
 ## Vježba 3 — Odaberite svoj izazov {.smaller}
 
-<div class="exercise-header">SAMOSTALNI RAD · 11 MINUTA</div>
+<div class="exercise-header">Samostalni rad · 11 minuta</div>
 
 <div class="card-grid cols-2">
 <div class="num-card">
@@ -459,41 +437,33 @@ Obavijest o promjeni rasporeda misa tijekom ljetnih mjeseci. Jasno komunicirati 
 </div>
 <div class="num-card">
 <div class="num">6</div>
-<div><strong>Slobodan izbor</strong><br>Imate vlastiti zadatak koji ste odgađali? Sada je pravo vrijeme da ga isprobate!</div>
+<div><strong>Slobodan izbor</strong><br>Imate vlastiti zadatak koji ste odgađali? Sada je pravo vrijeme da ga isprobate.</div>
 </div>
 </div>
 
 
 ---
 
-<!-- BLOCK 4 -->
+## Generiranje slika {background-color="#1a1a2e" .section-slide}
 
-## AI može i stvarati slike {.smaller background-color="#1B3A5C" .section-slide}
-
-::: {.r-fit-text style="color: white;"}
-Blok 4: Generiranje slika
-:::
-
-::: {style="color: rgba(255,255,255,0.7); font-size: 0.5em; margin-top: 0.5em;"}
 Pogledajmo što je moguće s vizualnom komunikacijom.
-:::
 
 
 ## AI može i stvarati slike {.smaller}
 
-Neki AI alati mogu generirati slike iz tekstualnog opisa. Mogućnost se brzo razvija i korisna je za **vizualnu komunikaciju u župi**.
+Neki AI alati mogu generirati slike iz tekstualnog opisa. Mogućnost se brzo razvija i korisna je za vizualnu komunikaciju u župi.
 
 <div class="card-grid cols-3" style="margin-top: 0.4em;">
 <div class="card">
-<strong>🎨 Koji alati?</strong>
+<strong>Koji alati?</strong>
 ChatGPT (DALL-E), Microsoft Copilot (besplatno), Canva (AI generator u besplatnom planu). Claude besplatna verzija ne generira slike.
 </div>
 <div class="card">
-<strong>✅ Kada koristiti?</strong>
+<strong>Kada koristiti?</strong>
 Ilustracija za Facebook objavu o Adventu, pozadina za plakat župnog događaja, vizual uz katehetsku temu.
 </div>
 <div class="card">
-<strong>❌ Kada ne koristiti?</strong>
+<strong>Kada ne koristiti?</strong>
 Kada trebate fotografiju vaše stvarne crkve ili župljana, precizni tekst u slici, ili nešto što izgleda kao službena fotografija.
 </div>
 </div>
@@ -502,35 +472,35 @@ Kada trebate fotografiju vaše stvarne crkve ili župljana, precizni tekst u sli
 ## Demonstracija generiranja slika {.smaller}
 
 <div class="demo-box">
-<div class="demo-label">⎕ DEMONSTRACIJA UŽIVO</div>
-<p>Koristimo Microsoft Copilot za generiranje slika — publika predlaže promptove!</p>
+<div class="demo-label">Demonstracija uživo</div>
+<p>Koristimo Microsoft Copilot za generiranje slika — publika predlaže promptove.</p>
 </div>
 
 <br>
 
 <div class="card-grid cols-3">
-<div class="prompt-box prompt-good" style="font-size: 0.5em;">
+<div class="prompt-box prompt-good" style="font-size: 0.48em;">
 <span class="prompt-label">Prompt 1</span>
 A warm watercolor illustration of people of different ages gathering around a table for a meal in a church parish hall. Soft warm lighting, friendly atmosphere, no text in the image.
 </div>
-<div class="prompt-box prompt-good" style="font-size: 0.5em;">
+<div class="prompt-box prompt-good" style="font-size: 0.48em;">
 <span class="prompt-label">Prompt 2</span>
 Prilagodba na temelju prvog rezultata — npr. jesenskije boje, dodati djecu, ili prilagoditi za hrvatsko selo.
 </div>
-<div class="prompt-box prompt-good" style="font-size: 0.5em;">
+<div class="prompt-box prompt-good" style="font-size: 0.48em;">
 <span class="prompt-label">Prompt 3</span>
 A simple elegant poster background for a Catholic parish Lenten retreat. Soft purple and gold tones, abstract, minimalist, no text.
 </div>
 </div>
 
 ::: {.highlight-box}
-**Ovo nije zamjena za profesionalnog dizajnera.** Ali ako je alternativa "nemamo nikakvu sliku" — onda je ovo odlična opcija.
+Ovo nije zamjena za profesionalnog dizajnera. Ali ako je alternativa "nemamo nikakvu sliku" — onda je ovo odlična opcija.
 :::
 
 
 ## Ograničenja kod slika {.smaller}
 
-<ul class="icon-list warn">
+<ul class="icon-list">
 <li><strong>Ruke i prsti</strong> — AI često generira ruke s previše ili premalo prstiju. Uvijek provjerite.</li>
 <li><strong>Tekst u slici</strong> — AI je vrlo loš u generiranju čitljivog teksta unutar slika. Generirajte pozadinu, dodajte tekst sami u Canvi.</li>
 <li><strong>Lica</strong> — Mogu izgledati neprirodno. Ilustracije i akvarel stil funkcioniraju bolje od fotorealističnog stila.</li>
@@ -540,8 +510,6 @@ A simple elegant poster background for a Catholic parish Lenten retreat. Soft pu
 
 
 ---
-
-<!-- BLOCK 5 -->
 
 ## Tri stvari za zapamtiti {.smaller}
 
@@ -575,11 +543,10 @@ Svaki AI rezultat treba pročitati, provjeriti točnost, prilagoditi vlastitom g
 
 <br>
 
-<div class="card card-accent" style="text-align: center;">
-<strong>📱 Digitalni letak s UZKO okvirom i primjerima promptova</strong>
-<div style="font-size: 0.55em; margin-top: 0.2em;">QR kod za preuzimanje — skenirajte mobitelom</div>
-<div style="font-size: 3em; margin: 0.1em 0; opacity: 0.3;">▢</div>
-<div style="font-size: 0.5em; color: #7F8C8D;">[ QR kod ]</div>
+<div style="text-align: center; margin-top: 1em;">
+<div style="font-size: 0.55em; color: #6b6b6b; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500;">Digitalni letak s UZKO okvirom i primjerima promptova</div>
+<div style="font-size: 4em; color: #e0e0e0; line-height: 1.2;">&#x25A1;</div>
+<div style="font-size: 0.4em; color: #aaa;">QR kod</div>
 </div>
 
 
@@ -587,21 +554,20 @@ Svaki AI rezultat treba pročitati, provjeriti točnost, prilagoditi vlastitom g
 
 <div class="card-grid cols-3" style="margin-top: 0.5em;">
 <div class="card card-dark" style="text-align: center;">
-<strong>🤔</strong><br>Što vas je najviše iznenadilo danas?
+Što vas je najviše iznenadilo danas?
 </div>
 <div class="card card-dark" style="text-align: center;">
-<strong>🎯</strong><br>Za koji biste zadatak u svojoj župi prvo koristili AI?
+Za koji biste zadatak u svojoj župi prvo koristili AI?
 </div>
 <div class="card card-dark" style="text-align: center;">
-<strong>💭</strong><br>Imate li nedoumice ili pitanja?
+Imate li nedoumice ili pitanja?
 </div>
 </div>
 
-<br>
-<br>
+<div class="closing-message">
 
-::: {.highlight-box style="text-align: center; font-size: 0.75em; border-left-color: #D4A843; background: linear-gradient(135deg, #FBF8F3, #F0E6D0);"}
-**Hvala na sudjelovanju i otvorenosti!**
+**Hvala na sudjelovanju i otvorenosti.**
 
 AI je alat koji će se nastaviti razvijati, ali ono što se neće promijeniti je da vjera živi u osobnom susretu, u zajednici, u vašem svakodnevnom služenju. AI vam može pomoći da imate više vremena upravo za to.
-:::
+
+</div>
