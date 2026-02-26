@@ -12,6 +12,7 @@ format:
     toc-title: "Sadržaj"
     number-sections: false
     smooth-scroll: true
+    embed-resources: true
   pdf:
     documentclass: article
     papersize: a4

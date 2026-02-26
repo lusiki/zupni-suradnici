@@ -1,72 +1,73 @@
 # AI kao pomoćnik u župnom radu
 
-Materijali za radionicu **"AI kao pomoćnik u župnom radu"** namijenjenu župnim suradnicima Zagrebačke nadbiskupije. Radionica traje 90 minuta, kombinira teorijski uvod s praktičnim radom, a cilj joj je osposobiti sudionike za samostalno korištenje AI alata (ponajprije Claude, besplatna verzija) u svakodnevnim župnim zadacima.
+### Praktična radionica za župne suradnike Zagrebačke nadbiskupije
 
-## O radionici
+Zamislite da imate pomoćnika koji vam može napisati nacrt Facebook objave za nadolazeći župni događaj, sastaviti zahvalnicu volonterima, preoblikovati biskupijsko okružno pismo u verziju razumljivu obiteljima — i sve to za nekoliko minuta. Upravo to je umjetna inteligencija u službi župnog rada.
 
-- **Trajanje:** 90 minuta
-- **Publika:** župni suradnici (tajnici, katehetice i katehete, animatori, voditelji župnih vijeća, komunikatori na društvenim mrežama, volonteri)
-- **Tehnička razina:** početna do srednja, prethodno iskustvo s AI alatima nije potrebno
-- **Broj sudionika:** do 15
-- **Kontekst:** Zagrebačka nadbiskupija, 2026.
+Ova radionica u trajanju od **90 minuta** osmišljena je za župne suradnike — tajnike, katehetice i katehete, animatore, voditelje vijeća, komunikatore na društvenim mrežama i sve koji žele uštedjeti vrijeme na administrativnim zadacima i posvetiti ga onome što je najvažnije: **osobnom susretu u zajednici**.
 
-## Struktura radionice
+> *AI je alat koji će se nastaviti razvijati, ali ono što se neće promijeniti jest da vjera živi u osobnom susretu, u zajednici, u vašem svakodnevnom služenju. AI vam može pomoći da imate više vremena upravo za to.*
 
-| Blok | Trajanje | Sadržaj |
-|------|----------|---------|
-| 1 — Uvod i demistifikacija | 20 min | Demonstracija uživo, objašnjenje AI-ja, prednosti, ograničenja, etika |
-| 2 — Kako pisati dobre promptove | 15 min | UZKO okvir (Uloga, Zadatak, Kontekst, Oblik), usporedba primjera |
-| 3 — Praktična radionica | 35 min | Tri vježbe iz župne prakse |
-| 4 — Generiranje slika | 10 min | Demonstracija alata za generiranje slika |
-| 5 — Zaključak | 10 min | Ključne poruke, resursi, diskusija |
+---
 
-## Sadržaj repozitorija
+## Što ćete naučiti
+
+Na radionici ćete naučiti razgovarati s AI alatom koristeći **UZKO okvir** — jednostavnu metodu za pisanje uputa koja daje odlične rezultate:
+
+| | |
+|---|---|
+| **U** — Uloga | Tko je AI u ovom razgovoru? |
+| **Z** — Zadatak | Što točno trebate? |
+| **K** — Kontekst | Koji su relevantni detalji? |
+| **O** — Oblik | Kakav ton, duljinu i stil želite? |
+
+Radionica pokriva pet blokova:
+
+| Blok | Trajanje | Što ćemo raditi |
+|------|----------|-----------------|
+| Uvod i demistifikacija | 20 min | Demonstracija uživo, što AI jest i nije, etička dimenzija |
+| Pisanje dobrih promptova | 15 min | UZKO okvir, usporedba lošeg i dobrog prompta |
+| Praktična radionica | 35 min | Tri vježbe iz stvarnog župnog rada |
+| Generiranje slika | 10 min | Demonstracija AI alata za slike |
+| Zaključak | 10 min | Ključne poruke, resursi, pitanja |
+
+Nije potrebno nikakvo prethodno iskustvo s AI alatima. Trebate samo uređaj s pristupom internetu.
+
+---
+
+## Materijali za radionicu
 
 ### Prezentacija
 
-Quarto reveal.js prezentacija od 21 slajda — vizualna pratnja radionici. Minimalan dizajn, Roboto tipografija, widescreen 16:9 format.
+> [**Otvori prezentaciju**](https://lusiki.github.io/zupni-suradnici/prezentacija/ai-u-zupnom-radu.html)
+>
+> 21 slajd koji vizualno prati radionicu — od uvoda u AI do praktičnih vježbi. Koristi se na projektoru tijekom radionice.
 
-| Datoteka | Opis |
-|----------|------|
-| [**Otvori prezentaciju**](https://lusiki.github.io/zupni-suradnici/prezentacija/ai-u-zupnom-radu.html) | Renderirana prezentacija u pregledniku |
-| [ai-u-zupnom-radu.qmd](prezentacija/ai-u-zupnom-radu.qmd) | Izvorni Quarto dokument |
-| [custom-theme.scss](prezentacija/custom-theme.scss) | SCSS tema za prezentaciju |
+### Stručni opis radionice
 
-### Tekstualni materijali
+Cjelovit opis radionice u formi stručnog članka — teorijski okvir, metodologija, sadržaj i očekivani ishodi. Pogodan za izvještaje, dokumentaciju ili pripremu budućih radionica.
 
-**AI kao pomoćnik u župnom radu — stručni opis radionice**
-Cjelovit stručni opis radionice u formi članka. Obuhvaća teorijski okvir, metodologiju, sadržaj radionice i očekivane ishode. Pogodan za objavu, izvještaj ili dokumentaciju.
+> [**Čitaj online**](https://lusiki.github.io/zupni-suradnici/tekst/ai-u-zupnom-radu-opis.html)
 
-| Format | Link |
-|--------|------|
-| HTML | [**Otvori u pregledniku**](https://lusiki.github.io/zupni-suradnici/tekst/ai-u-zupnom-radu-opis.html) |
-| Quarto izvor | [ai-u-zupnom-radu-opis.qmd](tekst/ai-u-zupnom-radu-opis.qmd) |
+### Vodič za župne suradnike
 
-**Razumjeti umjetnu inteligenciju u službi župnog rada — vodič za župne suradnike**
-Cjelovit vodič koji župnim suradnicima objašnjava što je AI, kako ga koristiti, UZKO okvir za pisanje promptova, praktične primjere iz župnog rada, etičku dimenziju i generiranje slika.
+Praktičan vodič koji objašnjava što je AI, kako ga koristiti u župnom radu, kako pisati dobre promptove s UZKO okvirom i na što paziti. Napisano pristupačnim jezikom, bez tehničkog žargona.
 
-| Format | Link |
-|--------|------|
-| HTML | [**Otvori u pregledniku**](https://lusiki.github.io/zupni-suradnici/tekst/razumjeti-ai-u-zupnom-radu.html) |
-| PDF | [**Preuzmi PDF**](https://lusiki.github.io/zupni-suradnici/tekst/razumjeti-ai-u-zupnom-radu.pdf) |
-| Quarto izvor | [razumjeti-ai-u-zupnom-radu.qmd](tekst/razumjeti-ai-u-zupnom-radu.qmd) |
+> [**Čitaj online**](https://lusiki.github.io/zupni-suradnici/tekst/razumjeti-ai-u-zupnom-radu.html) · [**Preuzmi PDF**](https://lusiki.github.io/zupni-suradnici/tekst/razumjeti-ai-u-zupnom-radu.pdf)
 
-## Alati korišteni na radionici
+---
 
-- [Claude](https://claude.ai) — besplatna verzija za tekstualne zadatke
-- [Microsoft Copilot](https://copilot.microsoft.com) — za demonstraciju generiranja slika
-- [ChatGPT](https://chat.openai.com) — alternativni AI alat
-- [Canva](https://www.canva.com) — za grafički dizajn
+## Korisni alati
+
+| Alat | Opis |
+|------|------|
+| [Claude](https://claude.ai) | AI asistent za tekstualne zadatke — koristimo ga na radionici |
+| [Microsoft Copilot](https://copilot.microsoft.com) | Besplatan AI alat koji može i generirati slike |
+| [ChatGPT](https://chat.openai.com) | Alternativni AI asistent |
+| [Canva](https://www.canva.com) | Grafički dizajn s AI funkcijama — odlično za plakate i objave |
+
+---
 
 ## Licenca
 
-Ovaj rad je licenciran pod [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) (CC BY-NC-SA 4.0) licencom.
-
-Slobodno možete:
-- **Dijeliti** — kopirati i redistribuirati materijale u bilo kojem mediju ili formatu
-- **Prilagođavati** — remiksirati, transformirati i nadograđivati materijale
-
-Pod sljedećim uvjetima:
-- **Imenovanje** — morate dati odgovarajuću zaslugu
-- **Nekomercijalno** — ne smijete koristiti materijale u komercijalne svrhe
-- **Dijeli pod istim uvjetima** — ako remiksate, transformirate ili nadograđujete materijale, morate distribuirati svoje doprinose pod istom licencom
+Svi materijali su slobodno dostupni pod [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) licencom — možete ih dijeliti i prilagođavati za nekomercijalnu uporabu uz navođenje izvora.
