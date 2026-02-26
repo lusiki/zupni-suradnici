@@ -26,3 +26,6 @@ env/
 *.log
 *.tex
 *_files/
+
+# Claude Code
+.claude/
