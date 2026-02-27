@@ -49,6 +49,12 @@ Cjelovit opis radionice u formi stručnog članka — teorijski okvir, metodolog
 
 > [**Čitaj online**](https://lusiki.github.io/zupni-suradnici/tekst/ai-u-zupnom-radu-opis.html)
 
+### Digitalni letak s UZKO okvirom
+
+Jednastranični letak s UZKO okvirom, primjerima promptova i QR kodom za dijeljenje. Idealan za ispis ili dijeljenje na mobitel nakon radionice.
+
+> [**Otvori letak**](https://lusiki.github.io/zupni-suradnici/letak/)
+
 ### Vodič za župne suradnike
 
 Praktičan vodič koji objašnjava što je AI, kako ga koristiti u župnom radu, kako pisati dobre promptove s UZKO okvirom i na što paziti. Napisano pristupačnim jezikom, bez tehničkog žargona.

@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI kao pomoćnik u župnom radu — Digitalni letak</title>
+    <meta name="description" content="UZKO okvir i primjeri promptova za korištenje AI alata u župnom radu. Radionica za župne suradnike Zagrebačke nadbiskupije.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        :root {
+            --primary: #1B3A5C;
+            --accent: #D4A843;
+            --text: #2D2D2D;
+            --bg: #FAFAFA;
+            --card-bg: #FFFFFF;
+            --light-border: #E8E8E8;
+            --success: #2E7D4F;
+            --danger: #C0392B;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #264d73 100%);
+            color: white;
+            padding: 48px 20px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: 0.85;
+            font-weight: 400;
+        }
+
+        header .badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 6px 16px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+
+        /* Sections */
+        section {
+            padding: 32px 0;
+        }
+
+        section + section {
+            border-top: 1px solid var(--light-border);
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 20px;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        /* UZKO Framework */
+        .uzko-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .uzko-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+
+        .uzko-card .letter {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: var(--primary);
+            color: white;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .uzko-card .label {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+
+        .uzko-card .desc {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .uzko-card .example {
+            margin-top: 8px;
+            padding: 8px 12px;
+            background: #F5F1E8;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: #6B5B3E;
+            font-style: italic;
+        }
+
+        /* Comparison boxes */
+        .compare {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        @media (min-width: 540px) {
+            .compare {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .compare-box {
+            border-radius: 12px;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        .compare-box.bad {
+            background: #FDF2F0;
+            border: 1px solid #F0C6C0;
+        }
+
+        .compare-box.bad .compare-label {
+            color: var(--danger);
+        }
+
+        .compare-box.good {
+            background: #F0F7F2;
+            border: 1px solid #B8D8C0;
+        }
+
+        .compare-box.good .compare-label {
+            color: var(--success);
+        }
+
+        .compare-label {
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+
+        .compare-box blockquote {
+            margin: 0;
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        /* Prompt examples */
+        .prompt-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .prompt-item {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+
+        .prompt-item .task-label {
+            display: inline-block;
+            padding: 3px 10px;
+            background: var(--primary);
+            color: white;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 10px;
+        }
+
+        .prompt-item .prompt-text {
+            background: #F7F7F7;
+            border-radius: 8px;
+            padding: 14px 16px;
+            font-size: 0.88rem;
+            line-height: 1.6;
+            color: #333;
+            border: 1px solid #EEE;
+            white-space: pre-wrap;
+        }
+
+        .prompt-item .prompt-text .uzko-tag {
+            display: inline;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Tips */
+        .tips-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tips-list li {
+            padding: 10px 0 10px 32px;
+            position: relative;
+            font-size: 0.92rem;
+            border-bottom: 1px solid var(--light-border);
+        }
+
+        .tips-list li:last-child {
+            border-bottom: none;
+        }
+
+        .tips-list li::before {
+            content: attr(data-icon);
+            position: absolute;
+            left: 0;
+            top: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Resources */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .resource-card {
+            display: block;
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 16px;
+            text-decoration: none;
+            color: var(--text);
+            border: 1px solid var(--light-border);
+            transition: box-shadow 0.2s, border-color 0.2s;
+        }
+
+        .resource-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .resource-card .name {
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+            color: var(--primary);
+        }
+
+        .resource-card .info {
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        /* QR Section */
+        .qr-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #F5F1E8 0%, #FDF9F0 100%);
+            border-radius: 16px;
+            margin: 20px 0;
+        }
+
+        .qr-section h2 {
+            margin-bottom: 12px;
+        }
+
+        .qr-section p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        #qr-code {
+            display: inline-block;
+            padding: 16px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        #qr-code canvas,
+        #qr-code img {
+            display: block;
+        }
+
+        .qr-url {
+            margin-top: 12px;
+            font-size: 0.78rem;
+            color: #999;
+            word-break: break-all;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 32px 20px;
+            font-size: 0.82rem;
+            color: #999;
+            border-top: 1px solid var(--light-border);
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Key messages */
+        .key-messages {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .key-message {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 18px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+
+        .key-message .number {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .key-message .msg-text {
+            font-size: 0.92rem;
+            line-height: 1.5;
+        }
+
+        .key-message .msg-text strong {
+            color: var(--primary);
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+                font-size: 11pt;
+            }
+
+            header {
+                background: var(--primary) !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .container {
+                max-width: 100%;
+            }
+
+            .resource-card:hover {
+                box-shadow: none;
+            }
+
+            section {
+                break-inside: avoid;
+            }
+
+            .qr-section {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>AI kao pomoćnik u župnom radu</h1>
+        <p>Digitalni letak za župne suradnike</p>
+        <span class="badge">Zagrebačka nadbiskupija &middot; 2026.</span>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- UZKO OKVIR -->
+    <section>
+        <h2>UZKO okvir za pisanje promptova</h2>
+        <p>Svaki dobar prompt ima četiri elementa. Zapamtite kraticu <strong>UZKO</strong> — ona vas vodi do jasne i potpune upute za AI alat.</p>
+
+        <div class="uzko-grid">
+            <div class="uzko-card">
+                <div class="letter">U</div>
+                <div class="label">Uloga</div>
+                <div class="desc">Tko je AI u ovom razgovoru? Dajte mu ulogu stručnjaka.</div>
+                <div class="example">"Ti si iskusan komunikator u crkvenoj zajednici..."</div>
+            </div>
+            <div class="uzko-card">
+                <div class="letter">Z</div>
+                <div class="label">Zadatak</div>
+                <div class="desc">Što točno trebate? Budite precizni u opisu onoga što želite.</div>
+                <div class="example">"...napiši Facebook objavu za..."</div>
+            </div>
+            <div class="uzko-card">
+                <div class="letter">K</div>
+                <div class="label">Kontekst</div>
+                <div class="desc">Koji su relevantni detalji? Dajte pozadinu i specifične informacije.</div>
+                <div class="example">"...župnu proslavu sv. Josipa, 19. ožujka, misa u 10h, nakon toga zajednički ručak..."</div>
+            </div>
+            <div class="uzko-card">
+                <div class="letter">O</div>
+                <div class="label">Oblik</div>
+                <div class="desc">Kakav ton, duljinu i stil želite? Definirajte format odgovora.</div>
+                <div class="example">"...ton topao i pozivajući, do 100 riječi, s jednim prikladnim emotikonom."</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- USPOREDBA -->
+    <section>
+        <h2>Loš prompt vs. dobar prompt</h2>
+
+        <div class="compare">
+            <div class="compare-box bad">
+                <div class="compare-label">Loš prompt</div>
+                <blockquote>Napiši nešto o misi.</blockquote>
+            </div>
+            <div class="compare-box good">
+                <div class="compare-label">Dobar prompt (UZKO)</div>
+                <blockquote>Ti si komunikator u župnoj zajednici. Napiši Facebook objavu za proslavu blagdana sv. Josipa u našoj župi. Misa je 19. ožujka u 10 sati, nakon mise slijedi zajednički ručak u župnom dvoru. Ton neka bude topao i pozivajući, do 100 riječi.</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRIMJERI PROMPTOVA -->
+    <section>
+        <h2>Primjeri promptova za župni rad</h2>
+
+        <div class="prompt-list">
+            <div class="prompt-item">
+                <div class="task-label">Društvene mreže</div>
+                <div class="prompt-text"><span class="uzko-tag">[U]</span> Ti si iskusan komunikator na društvenim mrežama u crkvenoj zajednici. <span class="uzko-tag">[Z]</span> Napiši Instagram objavu koja poziva mlade obitelji na nedjeljnu obiteljsku misu. <span class="uzko-tag">[K]</span> Misa je svake nedjelje u 10:30, posebno animirana za djecu, s kratkom katehezom prilagođenom najmlađima. Župa je u zagrebačkom naselju. <span class="uzko-tag">[O]</span> Tekst neka bude kratak (do 80 riječi), topao i prijateljski, s pozivom na akciju i 2-3 prikladna emotikona.</div>
+            </div>
+
+            <div class="prompt-item">
+                <div class="task-label">Email / Službeno pismo</div>
+                <div class="prompt-text"><span class="uzko-tag">[U]</span> Ti si tajnik župe koji piše službenu komunikaciju. <span class="uzko-tag">[Z]</span> Napiši email zahvalnicu volonterima koji su organizirali župni karitas. <span class="uzko-tag">[K]</span> Dvadeset volontera je tijekom prosinca prikupilo i podijelilo 150 paketa za socijalno ugrožene obitelji. Akcija je trajala tri tjedna. <span class="uzko-tag">[O]</span> Ton formalan ali srdačan, 150-200 riječi, s konkretnim podatcima o uspjehu akcije.</div>
+            </div>
+
+            <div class="prompt-item">
+                <div class="task-label">Kateheza</div>
+                <div class="prompt-text"><span class="uzko-tag">[U]</span> Ti si kateheta s iskustvom u radu s djecom od 10-12 godina. <span class="uzko-tag">[Z]</span> Predloži strukturu kateheze o temi praštanja. <span class="uzko-tag">[K]</span> Kateheza traje 45 minuta. Djeca su u 5. razredu i pripremaju se za prvu pričest. Potrebna je uvodna aktivnost, biblijski tekst i završna kreativna aktivnost. <span class="uzko-tag">[O]</span> Strukturiraj kao tablicu s tri stupca: aktivnost, trajanje, opis. Na kraju dodaj popis potrebnih materijala.</div>
+            </div>
+
+            <div class="prompt-item">
+                <div class="task-label">Bilten / Oglas</div>
+                <div class="prompt-text"><span class="uzko-tag">[U]</span> Ti si urednik župnog biltena. <span class="uzko-tag">[Z]</span> Napiši kratko razmišljanje za nadolazeću nedjelju (5. korizmena nedjelja). <span class="uzko-tag">[K]</span> Evanđelje je Iv 11,1-45 (uskrsnuće Lazarovo). Bilten čitaju uglavnom starije osobe i obitelji. <span class="uzko-tag">[O]</span> Topao i razumljiv ton, 100-150 riječi, bez teološkog žargona. Završi s jednim pitanjem za osobno promišljanje.</div>
+            </div>
+
+            <div class="prompt-item">
+                <div class="task-label">Sažimanje dokumenta</div>
+                <div class="prompt-text"><span class="uzko-tag">[U]</span> Ti si stručnjak za komunikaciju u Crkvi. <span class="uzko-tag">[Z]</span> Sažmi sljedeće biskupijsko okružno pismo u verziju razumljivu prosječnom župljanu. <span class="uzko-tag">[K]</span> [Ovdje zalijepite tekst dokumenta.] Čitatelji su župljani koji nisu teolozi. <span class="uzko-tag">[O]</span> Sažetak u 3-5 kratkih odlomaka, jednostavan jezik, bez pravnog ili teološkog žargona. Na kraju dodaj natuknice s ključnim porukama.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAVJETI -->
+    <section>
+        <h2>Savjeti za rad s AI alatom</h2>
+        <ul class="tips-list">
+            <li data-icon="&#x1F4AC;">Razgovarajte, ne šaljite samo jednu poruku — tražite doradu i prilagodbe u nastavcima.</li>
+            <li data-icon="&#x1F4DD;">Dajte AI-ju svoj postojeći tekst da ga poboljša ili preoblikuje za drugu publiku.</li>
+            <li data-icon="&#x1F504;">Tražite više verzija istog teksta pa odaberite najbolju ili kombinirajte.</li>
+            <li data-icon="&#x1F4CF;">Zadajte format izričito: broj riječi, strukturu, ton, stil.</li>
+            <li data-icon="&#x1F6A8;">Ako rezultat nije dobar, recite AI-ju što nije u redu — on uči iz vašeg povratnog odgovora.</li>
+            <li data-icon="&#x2705;">Uvijek pregledajte generirani tekst prije objave — vi ste stručnjak, AI je samo alat.</li>
+        </ul>
+    </section>
+
+    <!-- TRI PORUKE -->
+    <section>
+        <h2>Tri stvari za zapamtiti</h2>
+        <div class="key-messages">
+            <div class="key-message">
+                <div class="number">1</div>
+                <div class="msg-text"><strong>AI je alat, vi ste stručnjak.</strong> AI ne poznaje vašu župu, vaše ljude ni vaš kontekst. On pomaže, vi odlučujete.</div>
+            </div>
+            <div class="key-message">
+                <div class="number">2</div>
+                <div class="msg-text"><strong>Dobar prompt = dobar rezultat.</strong> Koristite UZKO okvir. Što više detalja date, to je rezultat bolji.</div>
+            </div>
+            <div class="key-message">
+                <div class="number">3</div>
+                <div class="msg-text"><strong>Nikada ne šaljite bez provjere.</strong> AI može pogriješiti, izmisliti ili krivo protumačiti. Svaki tekst pregledajte prije objave.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESURSI -->
+    <section>
+        <h2>Korisni alati</h2>
+        <div class="resource-grid">
+            <a href="https://claude.ai" target="_blank" rel="noopener" class="resource-card">
+                <div class="name">Claude</div>
+                <div class="info">AI asistent za tekst — besplatan</div>
+            </a>
+            <a href="https://copilot.microsoft.com" target="_blank" rel="noopener" class="resource-card">
+                <div class="name">Copilot</div>
+                <div class="info">AI za tekst i slike — besplatan</div>
+            </a>
+            <a href="https://chat.openai.com" target="_blank" rel="noopener" class="resource-card">
+                <div class="name">ChatGPT</div>
+                <div class="info">AI asistent — besplatan</div>
+            </a>
+            <a href="https://www.canva.com" target="_blank" rel="noopener" class="resource-card">
+                <div class="name">Canva</div>
+                <div class="info">Dizajn s AI — plakati i objave</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- QR CODE -->
+    <div class="qr-section">
+        <h2>Podijelite ovaj letak</h2>
+        <p>Skenirajte QR kod ili podijelite link s kolegama iz župe.</p>
+        <div id="qr-code"></div>
+        <div class="qr-url" id="qr-url"></div>
+    </div>
+
+</main>
+
+<footer>
+    <p>Radionica "AI kao pomoćnik u župnom radu" &middot; Zagrebačka nadbiskupija, 2026.</p>
+    <p style="margin-top:6px;">
+        <a href="https://lusiki.github.io/zupni-suradnici/" target="_blank">Svi materijali za radionicu</a>
+    </p>
+    <p style="margin-top:6px; font-size:0.75rem;">
+        Licenca: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>
+    </p>
+</footer>
+
+<!-- QR Code Generator: qrcode.js by davidshimjs (MIT License) -->
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script>
+    (function() {
+        var url = "https://lusiki.github.io/zupni-suradnici/letak/";
+        var qrContainer = document.getElementById("qr-code");
+        var qrUrlEl = document.getElementById("qr-url");
+
+        // Display the URL
+        qrUrlEl.textContent = url;
+
+        // Generate QR code
+        if (typeof QRCode !== "undefined") {
+            new QRCode(qrContainer, {
+                text: url,
+                width: 200,
+                height: 200,
+                colorDark: "#1B3A5C",
+                colorLight: "#FFFFFF",
+                correctLevel: QRCode.CorrectLevel.H
+            });
+        } else {
+            // Fallback: use external QR code API as image
+            var img = document.createElement("img");
+            img.src = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&color=1B3A5C&data=" + encodeURIComponent(url);
+            img.alt = "QR kod za digitalni letak";
+            img.width = 200;
+            img.height = 200;
+            qrContainer.appendChild(img);
+        }
+    })();
+</script>
+
+</body>
+</html>
