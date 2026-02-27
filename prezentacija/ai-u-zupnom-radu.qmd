@@ -543,11 +543,35 @@ Svaki AI rezultat treba pročitati, provjeriti točnost, prilagoditi vlastitom g
 
 <br>
 
-<div style="text-align: center; margin-top: 1em;">
-<div style="font-size: 0.55em; color: #6b6b6b; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500;">Digitalni letak s UZKO okvirom i primjerima promptova</div>
-<div style="font-size: 4em; color: #e0e0e0; line-height: 1.2;">&#x25A1;</div>
-<div style="font-size: 0.4em; color: #aaa;">QR kod</div>
+<div style="text-align: center; margin-top: 0.6em;">
+<div style="font-size: 0.55em; color: #6b6b6b; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; margin-bottom: 0.4em;">Digitalni letak s UZKO okvirom i primjerima promptova</div>
+<div id="qr-resursi" style="display: inline-block; padding: 12px; background: white; border-radius: 8px;"></div>
+<div style="font-size: 0.35em; color: #aaa; margin-top: 0.3em;">lusiki.github.io/zupni-suradnici/letak</div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var el = document.getElementById('qr-resursi');
+  if (el && typeof QRCode !== 'undefined') {
+    new QRCode(el, {
+      text: 'https://lusiki.github.io/zupni-suradnici/letak/',
+      width: 180,
+      height: 180,
+      colorDark: '#1a1a2e',
+      colorLight: '#ffffff',
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  } else if (el) {
+    var img = document.createElement('img');
+    img.src = 'https://api.qrserver.com/v1/create-qr-code/?size=180x180&color=1a1a2e&data=' + encodeURIComponent('https://lusiki.github.io/zupni-suradnici/letak/');
+    img.alt = 'QR kod za digitalni letak';
+    img.width = 180;
+    img.height = 180;
+    el.appendChild(img);
+  }
+});
+</script>
 
 
 ## Pitanja i razmjena iskustava {.smaller .final-slide}
